@@ -1,9 +1,19 @@
 .header
+  position: relative
   padding: 30px 0 125px
   background: radial-gradient(1953.06px at 15.67% 14.13%, #0C0E57 0%, #14052C 100%)
 
   +media(s, 168px)
     padding: 30px 0 115px
+  
+.header::before
+  content: ''
+  position: absolute
+  top: 0
+  left: 0
+  width: 500px
+  height: 100%
+  background: url('../img/decoration/loop1.svg') center no-repeat
   
 .header-top
   display: flex
