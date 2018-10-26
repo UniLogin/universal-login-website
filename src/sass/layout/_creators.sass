@@ -1,21 +1,34 @@
 .creators
-  padding-top: 183px
+  padding: 183px 0 314px
   background: radial-gradient(2437.43px at 15.67% 14.13%, #0C0E57 0%, #14052C 100%)
-
+  
 .creators-title
   margin-bottom: 48px
 
 .creators-list
   display: flex
   justify-content: center
-  padding-bottom: 50px
+  margin-bottom: 110px
 
+.creators-label
+  margin-bottom: 20px
+  font-family: 'Geomanist-Book', sans-serif
+  font-size: 20px
+  color: #FFFFFF
+  letter-spacing: -0.14px
+  text-align: center
+  
 .creators-ethworks
   display: flex
 
 .creator
   position: relative
+  width: 170px
+  height: 170px
 
+.creator-img
+  max-width: 100%
+  
 .creator-name
   position: absolute
   left: 50%
@@ -23,9 +36,9 @@
   width: 100%
   transform: translateX(-50%)
   opacity: 0.8
-  font-size: 18px
   color: #FFFFFF
-  letter-spacing: -0.56px
+  font-size: 14px
+  letter-spacing: -0.24px
   text-align: center
   line-height: 32px
 
@@ -34,3 +47,36 @@
 
 .creators-ethworks .creator:nth-child(2)
   margin-left: 30px
+
+.grants
+  margin-bottom: 140px
+
+.grants-title
+  margin-bottom: 56px
+
+.grants-list
+  display: flex
+  align-items: center
+  justify-content: space-between
+  max-width: 470px
+  margin: 0 auto
+
+.eth-community-img
+  width: 166px
+  height: 55px
+
+.open-source
+  position: relative
+  padding: 27px 0 0
+
+.open-source::after
+  content: ''
+  position: absolute
+  top: -25px
+  left: 50%
+  transform: translateX(-50%)
+  width: 1239px
+  max-width: 100%
+  height: 600px
+  background: url('../img/map.svg') center no-repeat
+  background-size: contain
