@@ -13,8 +13,135 @@
     margin-bottom: 50px
   
 .process-img-wrapper
+  position: relative
+  max-width: 1020px
+  margin: 0 auto
   text-align: center
+
+.tooltip-block
+  position: absolute
+
+  +media(m, 90px)
+    display: none
+
+.tooltip-block:nth-child(1)
+  top: 17%
+  left: 0
+  width: 18%
+  height: 21%
+  // background: red
+
+.tooltip-block:nth-child(2)
+  top: 6%
+  left: 34%
+  width: 24%
+  height: 21%
+  // background: green
+
+.tooltip-block:nth-child(3)
+  top: 24%
+  right: 0
+  width: 22%
+  height: 17%
+  // background: grey
+
+.tooltip-block:nth-child(4)
+  top: 59%
+  right: 13%
+  width: 11%
+  height: 23%
+  // background: pink
+
+.tooltip-block:nth-child(5)
+  top: 72%
+  right: 36%
+  width: 12%
+  height: 28%
+  // background: blue
+
+.tooltip-block:nth-child(6)
+  top: 65%
+  left: 4%
+  width: 21%
+  height: 27%
+  // background: yellow
+
+.tooltip-block:nth-child(7)
+  top: 37%
+  left: 38%
+  width: 22%
+  height: 21%
+  // background: orange
+
+.tooltip
+  display: none
+  position: absolute
+  width: 300px
+  height: 110px
+  padding: 15px 20px
+  background: #4149ba
+  box-shadow: 0 6px 8px 0 #0A0642
+  border-radius: 6px
+  font-size: 16px
+  color: #dcddf3
+  letter-spacing: -0.5px
+  line-height: 25px
+  text-align: left
+
+.tooltip-block:hover .tooltip
+  display: block
   
+.tooltip::after
+  content: ''
+  position: absolute
+  bottom: 0
+  left: 41%
+  transform: translateY(100%)
+  border: 12px solid transparent
+  border-top: 10px solid #4149ba
+
+.tooltip-1st-key
+  top: -11%
+  left: 0
+  transform: translateY(-100%)
+  
+.tooltip-web-app
+  top: -11%
+  left: 0
+  transform: translateY(-100%)
+
+.tooltip-relayer
+  top: -11%
+  right: 0
+  transform: translateY(-100%)
+
+.tooltip-wallet
+  top: -11%
+  right: 0
+  transform: translateY(-100%)
+
+.tooltip-wallet::after
+  left: 78%
+  
+.tooltip-3rd-key
+  top: -11%
+  right: 0
+  transform: translateY(-100%)
+
+.tooltip-3rd-key::after
+  left: 78%
+
+.tooltip-2nd-key
+  top: -11%
+  left: 0
+  transform: translateY(-100%)
+
+.tooltip-identity
+  top: -11%
+  left: 0
+  transform: translateY(-100%)
+
+
 .process-img
   max-width: 100%
 
