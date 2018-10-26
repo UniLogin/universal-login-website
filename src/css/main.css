@@ -247,6 +247,7 @@ body {
           transform: translateY(2px); }
 
 .problems-solutions {
+  position: relative;
   padding: 65px 0 90px;
   background: -webkit-radial-gradient(15.67% 14.13%, 2038.19px, #0C0E57 0%, #14052C 100%);
   background: -o-radial-gradient(15.67% 14.13%, 2038.19px, #0C0E57 0%, #14052C 100%);
@@ -255,11 +256,25 @@ body {
     .problems-solutions {
       padding: 50px 0 70px; } }
 
+.problems-solutions::after {
+  content: '';
+  position: absolute;
+  top: 30px;
+  right: 0;
+  height: 725px;
+  width: 360px;
+  background: url("../img/decoration/circles.svg") center no-repeat; }
+  @media (max-width: 1024px) {
+    .problems-solutions::after {
+      display: none; } }
+
 .propblems-solutions-row {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  z-index: 10; }
   @media (max-width: 768px) {
     .propblems-solutions-row {
       display: block; } }

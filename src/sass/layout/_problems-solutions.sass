@@ -1,12 +1,27 @@
 .problems-solutions
+  position: relative
   padding: 65px 0 90px
   background: radial-gradient(2038.19px at 15.67% 14.13%, #0C0E57 0%, #14052C 100%)
 
   +media(s, 168px)
     padding: 50px 0 70px
   
+.problems-solutions::after
+  content: ''
+  position: absolute
+  top: 30px
+  right: 0
+  height: 725px
+  width: 360px
+  background: url('../img/decoration/circles.svg') center no-repeat
+
+  +media(m, 124px)
+    display: none
+    
 .propblems-solutions-row
+  position: relative
   display: flex
+  z-index: 10
 
   +media(s, 168px)
     display: block
