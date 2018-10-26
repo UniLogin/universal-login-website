@@ -2,12 +2,18 @@
   position: relative
   padding: 50px 0 112px
   background-image: linear-gradient(135deg, #706AE1 0%, #3742B2 100%)
-  box-shadow: 0 6px 8px 0 #0A0642
+
+  +media(s, 168px)
+    padding: 50px 0
 
 .footer-row
   display: flex
   align-items: center
   justify-content: space-between
+
+  +media(s, 168px)
+    flex-direction: column
+    align-items: center
 
 .footer-mail
   opacity: 0.8
@@ -17,3 +23,6 @@
   text-align: center
   line-height: 32px
   font-style: normal
+
+  +media(s, 168px)
+    margin-top: 30px

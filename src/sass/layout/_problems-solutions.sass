@@ -2,11 +2,20 @@
   padding: 65px 0 90px
   background: radial-gradient(2038.19px at 15.67% 14.13%, #0C0E57 0%, #14052C 100%)
 
+  +media(s, 168px)
+    padding: 50px 0 70px
+  
 .propblems-solutions-row
   display: flex
 
+  +media(s, 168px)
+    display: block
+
 .solutions
   margin-left: 30px
+
+  +media(s, 168px)
+    margin: 50px 0 0
 
 .problems-subtitle,
 .solutions-subtitle
@@ -16,6 +25,9 @@
   letter-spacing: -0.5px
   text-align: center
   line-height: 32px
+
+  +media(s, 168px)
+    margin-bottom: 20px
 
 .problems-list-item + .problems-list-item,
 .solutions-list-item + .solutions-list-item

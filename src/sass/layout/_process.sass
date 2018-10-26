@@ -1,35 +1,62 @@
 .process
+  position: relative
   padding-top: 80px
   background: radial-gradient(2192.05px at 15.67% 14.13%, #0C0E57 0%, #14052C 100%)
 
+  +media(s, 168px)
+    padding: 50px 0 163px
+  
+.process-title
+  margin-bottom: 40px
+
+  +media(s, 168px)
+    margin-bottom: 50px
+  
 .process-img-wrapper
   text-align: center
   
 .process-img
   max-width: 100%
 
+.process-img-desktop
+  +media(m)
+    display: none
+
+.process-img-tablet
+  +media(m)
+    display: inline-block
+
 .links
   padding: 50px 20px
   margin-top: 40px
   transform: translateY(100px)
-  background-image: linear-gradient(135deg, #706AE1 0%, #3742B2 100%)
+  background: linear-gradient(160.94deg, #706AE1 0%, #3742B2 100%)
   box-shadow: 0 6px 8px 0 #0A0642
   border-radius: 6px
+
+  +media(s, 168px)
+    position: absolute
+    bottom: -150px
+    left: 50%
+    max-width: 95%
+    width: 100%
+    transform: translate(-50%, 0)
 
 .links-title
   margin-bottom: 51px
 
 .links-list
   display: flex
-  justify-content: center
   flex-wrap: wrap
+  max-width: 870px
+  margin: 0 auto
 
 .links-list-item + .links-list-item
   margin-left: 2.7%
 
 .links-list-item
   max-width: 270px
-  width: 24%
+  width: 31.5%
   
 .link
   display: block
