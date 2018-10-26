@@ -1,0 +1,33 @@
+*
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+
+html
+  overflow-x: hidden
+
+body
+  overflow-x: hidden
+
+.container
+  width: 100%
+  max-width: 1230px
+  margin: 0 auto
+  padding: 0 30px
+  
+  +media(s, 168px)
+      padding: 0 15px
+
+.row
+  display: flex
+
+.justify-content-between
+  justify-content: space-between
+
+.align-items-center
+  align-items: center
+      
+.flex-wrap
+  flex-wrap: wrap
+      
+.relative
+  position: relative
