@@ -5,6 +5,9 @@
 
   +media(s, 168px)
     padding: 50px 0 163px
+
+  +media(s, 40px)
+    padding: 50px 0 330px  
   
 .process-title
   margin-bottom: 40px
@@ -180,12 +183,22 @@
   max-width: 870px
   margin: 0 auto
 
+  +media(s, 40px)
+    flex-direction: column
+    align-items: center
+
 .links-list-item + .links-list-item
   margin-left: 2.7%
+
+  +media(s, 40px)
+    margin: 20px 0 0
 
 .links-list-item
   max-width: 270px
   width: 31.5%
+
+  +media(s, 40px)
+    width: 100%
   
 .link
   display: block
@@ -201,3 +214,6 @@
   color: #FFFFFF
   letter-spacing: -0.32px
   text-align: center
+
+  +media(s, 168px)
+    font-size: 15px

@@ -33,6 +33,10 @@
   +media(s, 168px)
     margin-bottom: 58px
 
+  +media(s, 40px)
+    flex-direction: column
+    align-items: center
+
 .creators-label
   margin-bottom: 20px
   font-family: 'Geomanist-Book', sans-serif
@@ -47,6 +51,11 @@
   
 .creators-ethworks
   display: flex
+
+  +media(s, 40px)
+    flex-direction: column
+    align-items: center
+    margin-bottom: 20px
 
 .creator
   position: relative
@@ -72,8 +81,15 @@
 .creators-list-item + .creators-list-item
   margin-left: 30px
 
+  +media(s, 40px)
+    margin-left: 0
+
 .creators-ethworks .creator:nth-child(2)
   margin-left: 30px
+
+  +media(s, 40px)
+    margin-left: 0
+    margin-top: 20px
 
 .grants
   margin-bottom: 140px
@@ -90,6 +106,14 @@
   justify-content: space-between
   max-width: 470px
   margin: 0 auto
+
+  +media(s, -100px)
+    flex-direction: column
+    align-items: center
+
+.grants-list-item + .grants-list-item
+  +media(s, -100px)  
+    margin-top: 20px
 
 .eth-community-img
   width: 166px
