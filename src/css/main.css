@@ -502,6 +502,14 @@ body {
   .process-img-tablet {
     display: inline-block; } }
 
+@media (max-width: 600px) {
+  .process-img-tablet {
+    display: none; } }
+
+@media (max-width: 600px) {
+  .process-img-mob {
+    display: inline-block; } }
+
 .links {
   position: relative;
   padding: 50px 20px;
