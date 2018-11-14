@@ -25,8 +25,9 @@
 
 .tooltip-block
   position: absolute
-
-  +media(m, 90px)
+  outline: none
+  
+  +media(s)
     display: none
 
 .tooltip-block:nth-child(1)
@@ -35,11 +36,23 @@
   width: 18%
   height: 21%
 
+  +media(m)
+    top: 12%
+    left: 9%
+    width: 12%
+    height: 24%
+
 .tooltip-block:nth-child(2)
   top: 6%
   left: 34%
   width: 24%
   height: 21%
+
+  +media(m)
+    top: 1%
+    left: 46%
+    width: 18%
+    height: 25%
 
 .tooltip-block:nth-child(3)
   top: 24%
@@ -47,35 +60,64 @@
   width: 22%
   height: 17%
 
+  +media(m)
+    top: 22%
+    right: 4%
+    width: 17%
+    height: 17%
+
 .tooltip-block:nth-child(4)
   top: 59%
   right: 13%
   width: 11%
   height: 23%
 
+  +media(m)
+    top: 55%
+    right: 9%
+    width: 14%
+    height: 21%
+
 .tooltip-block:nth-child(5)
   top: 72%
   right: 36%
-  width: 12%
+  width: 15%
   height: 28%
 
+  +media(m)
+    top: 74%
+    right: 37%
+    width: 14%
+    height: 26%
+  
 .tooltip-block:nth-child(6)
   top: 65%
   left: 4%
   width: 21%
   height: 27%
 
+  +media(m)
+    top: 61%
+    left: 5%
+    width: 26%
+    height: 25%
+  
 .tooltip-block:nth-child(7)
   top: 37%
   left: 38%
   width: 22%
   height: 21%
 
+  +media(m)
+    top: 30%
+    left: 29%
+    width: 29%
+    height: 24%
+
 .tooltip
   display: none
   position: absolute
   width: 300px
-  height: 110px
   padding: 15px 20px
   background: #4149ba
   box-shadow: 0 6px 8px 0 #0A0642
@@ -88,6 +130,9 @@
 
 .tooltip-block:hover .tooltip
   display: block
+.tooltip-block:focus .tooltip
+  +media(l, 200px)
+    display: block
   
 .tooltip::after
   content: ''
@@ -102,21 +147,37 @@
   top: -11%
   left: 0
   transform: translateY(-100%)
+
+.tooltip-1st-key::after
+  +media(m)
+    left: 8%
   
 .tooltip-web-app
   top: -11%
   left: 0
   transform: translateY(-100%)
 
+.tooltip-web-app::after
+  +media(m)
+    left: 13%
+
 .tooltip-relayer
   top: -11%
   right: 0
   transform: translateY(-100%)
 
+.tooltip-relayer::after
+  +media(m)
+    left: 75%
+
 .tooltip-wallet
   top: -11%
   right: 0
   transform: translateY(-100%)
+
+.tooltip-wallet::after
+  +media(m)
+    left: 75%
 
 .tooltip-wallet::after
   left: 78%
@@ -134,14 +195,22 @@
   left: 0
   transform: translateY(-100%)
 
+.tooltip-2nd-key::after
+  +media(m)
+    left: 20%
+
 .tooltip-identity
   top: -11%
   left: 0
   transform: translateY(-100%)
 
+.tooltip-identity::after
+  +media(m)
+    left: 11%
 
 .process-img
   max-width: 100%
+  width: 100%
 
 .process-img-desktop
   +media(m)
@@ -175,6 +244,22 @@
     max-width: 95%
     width: 100%
     transform: translate(-50%, 0)
+
+.links::after
+  content: ''
+  position: absolute
+  right: 0
+  bottom: 0
+  width: 700px
+  height: 100%
+  background: url('../img/decoration/looper@1x.png') center no-repeat
+  background-size: contain
+
+  +media(s, 40px)
+    height: 100%
+    width: 100%
+    background-size: cover
+
 
 .links-title
   margin-bottom: 51px
