@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="35" viewBox="0 0 13 35">
+  <defs>
+    <path id="arrow-bright-b" d="M6.37890625,0.760742188 L6.37890625,32.046875"/>
+    <filter id="arrow-bright-a" width="5600%" height="279%" x="-2750%" y="-86.3%" filterUnits="objectBoundingBox">
+      <feMorphology in="SourceAlpha" operator="dilate" radius=".5" result="shadowSpreadOuter1"/>
+      <feOffset dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+      <feMorphology in="SourceAlpha" radius="1" result="shadowInner"/>
+      <feOffset dy="1" in="shadowInner" result="shadowInner"/>
+      <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="9"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.364705882   0 0 0 0 0.956862745   0 0 0 0 0.82745098  0 0 0 1 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <g opacity=".4" transform="rotate(180 6.379 16.404)">
+      <use fill="#000" filter="url(#arrow-bright-a)" xlink:href="#arrow-bright-b"/>
+      <use stroke="#18DAA2" xlink:href="#arrow-bright-b"/>
+    </g>
+    <g fill="#17D2A5" fill-rule="nonzero" transform="translate(0 25.76)">
+      <path d="M1.09115918,2.90943367 C0.588892838,2.40749474 0.58862741,1.59342553 1.09056633,1.09115918 C1.59250526,0.588892838 2.40657447,0.58862741 2.90884082,1.09056633 L7.40884082,5.58763283 C7.91110716,6.08957175 7.91137259,6.90364096 7.40943367,7.40590731 C6.90749474,7.90817365 6.09342553,7.90843908 5.59115918,7.40650016 L1.09115918,2.90943367 Z"/>
+      <path d="M7.40884082,7.40650016 C6.90657447,7.90843908 6.09250526,7.90817365 5.59056633,7.40590731 C5.08862741,6.90364096 5.08889284,6.08957175 5.59115918,5.58763283 L10.0911592,1.09056633 C10.5934255,0.58862741 11.4074947,0.588892838 11.9094337,1.09115918 C12.4113726,1.59342553 12.4111072,2.40749474 11.9088408,2.90943367 L7.40884082,7.40650016 Z"/>
+    </g>
+  </g>
+</svg>

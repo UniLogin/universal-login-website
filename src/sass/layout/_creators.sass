@@ -1,15 +1,15 @@
 .creators
   position: relative
-  padding: 183px 0 0
+  padding: 266px 0 0
   background: -webkit-radial-gradient(15.67% 14.13%, 2437.43px, #0C0E57 0%, #14052C 100%)
   background: -o-radial-gradient(15.67% 14.13%, 2437.43px, #0C0E57 0%, #14052C 100%)
   background: radial-gradient(2437.43px at 15.67% 14.13%, #0C0E57 0%, #14052C 100%)
   
   +media(s, 168px)
     padding: 210px 0 0
-  
-  // +media(m, 124px)
-  //   right: -350px
+
+  +media(s)
+    padding: 315px 0 0
   
 .creators .container
   position: relative
@@ -85,7 +85,13 @@
     margin-top: 20px
 
 .grants
-  margin-bottom: 140px
+  margin-bottom: 180px
+
+  +media(m)
+    margin-bottom: 130px
+  
+  +media(s)
+    margin-bottom: 200px
 
 .grants-title
   margin-bottom: 56px
@@ -106,7 +112,7 @@
 
 .grants-list-item + .grants-list-item
   +media(s, -100px)  
-    margin-top: 20px
+    margin-top: 85px
 
 .eth-community-img
   width: 166px
@@ -114,51 +120,121 @@
 
 .open-source
   position: relative
+  padding-bottom: 157px
+
+.open-source .container
+  padding: 0
+
+.open-source-title
+  transform: translateY(50px)
 
 .map-img-container
   position: relative
   
 .map-img
   max-width: 100%
+
+  +media(m)
+    width: 100%
+
+.map-img-desktop
+  +media(m)
+    display: none
+.map-img-tablet
+  +media(m)
+    display: inline-block
+
+  +media(s)
+    display: none
+
+.map-img-mobile
+  +media(s)
+    display: inline-block
   
 .pin
   position: absolute
-  width: 5px
-  height: 5px
-  background: green
+  width: 11px
+  height: 11px
+  background: #ffffff
   border-radius: 50%
+  border: 3px solid #706AE1
 
 .pin-freemont
   top: 46.8%
   left: 13.9%
 
+  +media(m)
+    top: 42.8%
+    left: 17.9%
+
+  +media(s)
+    top: 43.8%
+    left: 3.9%
+  
 .pin-boston
   top: 42%
   left: 26.8%
+  
+  +media(m)
+    top: 38%
+    left: 34.8%
+
+  +media(s)
+    left: 31%
 
 .pin-rio
   bottom: 15.5%
   left: 34.1%
 
+  +media(m)
+    bottom: 20.5%
+    left: 45.1%
+
 .pin-bulgaria
   top: 40.3%
   left: 53.8%
+
+  +media(m)
+    top: 37%
+    left: 70.8%
+
+  +media(s)
+    left: 90.8%
 
 .pin-genoa
   top: 38.8%
   left: 49.4%
 
+  +media(m)
+    top: 35.8%
+    left: 65%
+
+  +media(s)
+    left: 81%
+  
 .pin-warsaw
   top: 33.8%
   left: 53.8%
 
+  +media(m)
+    top: 30.5%
+    left: 70.8%
+
+  +media(s)
+    top: 28.5%
+    left: 90.8%
+  
 .pin-lodz
   top: 33.8%
   left: 51.6%
 
-  +media(s, -100px)
-    top: 32.5%
-    left: 49.9%
+  +media(m)
+    top: 30.8%
+    left: 66.6%
+
+  +media(s)
+    top: 30%
+    left: 84%
 
 .pin-hover-area
   position: absolute
@@ -199,22 +275,26 @@
 .pin-bulgaria .pin-tooltip
   width: 200px
 
-  +media(xs, 100px)
-    left: -50px
-    top: -5px
+  +media(s)
+    transform: translate(-88%, -100%)
 
 .pin-warsaw .pin-tooltip
   width: 250px
 
-  +media(xs, 100px)
-    left: -105px
-    top: -5px
+  +media(s)
+    transform: translate(-88%, -100%)
 
 .pin-lodz .pin-tooltip
   width: 190px
 
+  +media(s)
+    transform: translate(-88%, -100%)
+
 .pin-genoa .pin-tooltip
   width: 190px
+
+  +media(s)
+    transform: translate(-88%, -100%)
   
 .pin-hover-area:hover .pin-tooltip
   display: block
