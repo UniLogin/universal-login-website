@@ -245,7 +245,7 @@
     width: 100%
     transform: translate(-50%, 0)
 
-.links::after
+.links::before
   content: ''
   position: absolute
   right: 0
@@ -254,6 +254,7 @@
   height: 100%
   background: url('../img/decoration/looper@1x.png') center no-repeat
   background-size: contain
+  z-index: 0
 
   +media(s, 40px)
     height: 100%
@@ -265,10 +266,12 @@
   margin-bottom: 51px
 
 .links-list
+  position: relative
   display: flex
   flex-wrap: wrap
   max-width: 870px
   margin: 0 auto
+  z-index: 10
 
   +media(s, 40px)
     flex-direction: column
