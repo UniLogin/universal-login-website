@@ -1,15 +1,12 @@
 .header
   position: relative
-  padding: 30px 0 125px
+  padding: 30px 0 145px
   background: -webkit-radial-gradient(15.67% 14.13%, 1953.06px, #0C0E57 0%, #14052C 100%)
   background: -o-radial-gradient(15.67% 14.13%, 1953.06px, #0C0E57 0%, #14052C 100%)
   background: radial-gradient(1953.06px at 15.67% 14.13%, #0C0E57 0%, #14052C 100%)
 
   +media(s, 168px)
-    padding: 30px 0 115px
-
-  +media(s, -100px)
-    padding: 30px 0 70px
+    padding: 30px 0 155px
   
 .header::before
   content: ''
@@ -90,23 +87,3 @@
     margin-bottom: 35px
     font-size: 16px
     letter-spacing: -0.5px
-
-.hero-link
-  display: inline-block
-  width: 212px
-  height: 60px
-  padding-top: 19px
-  background: #13B989
-  box-shadow: 0 6px 8px 0 #190F45
-  border-radius: 4px
-  font-family: 'HelveticaNeue-Medium', sans-serif
-  font-size: 16px
-  color: #FFFFFF
-  letter-spacing: -0.32px
-  text-align: center
-
-.hero-link:hover
-  background: lighten(#13B989, 3%)
-
-.hero-link:active
-  transform: translateY(2px)

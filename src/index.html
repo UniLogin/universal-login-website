@@ -34,7 +34,7 @@
 								<a href="#solutions" class="nav-link">Solutions</a>
 							</li>
 							<li class="nav-list-item">
-								<a href="#process" class="nav-link">How does it work?</a>
+								<a href="#process" class="nav-link">How does it works?</a>
 							</li>
 							<li class="nav-list-item">
 								<a href="#team" class="nav-link">Team</a>
@@ -46,65 +46,131 @@
 			<div class="hero-content">
 				<h1 class="hero-title">UniversalLoginSDK</h1>
 				<p class="hero-text">UniversalLoginSDK is composed of a set of smart contracts, a js lib, and a relayer that help build applications using ERC #725, #735, #1077 and #1078.</p>
-				<a href="https://github.com/universallogin" class="hero-link" target="_blank">Get the SDK</a>
+				<a href="https://github.com/universallogin" class="primary-btn" target="_blank">Get the SDK</a>
 			</div>
 		</div>
 	</header>
 	<main>
 		<section class="problems-solutions">
 			<div class="container">
-				<div class="propblems-solutions-row">
-					<div id="problems" class="problems">
-						<h2 class="section-title problems-title">Problems</h2>
-						<p class="problems-subtitle">Ethereum is too complicated for the average user</p>
-						<ul class="problems-list">
-							<li class="problems-list-item">Security is hard - backup keys, hard wallets, multisig wallets are too complicated for the users used to web 2.0 experience</li>
-							<li class="problems-list-item">Tokens are a second-class citizen on Ethereum</li>
-							<li class="problems-list-item">Most funds are stored on centralized exchanges which limits interoperability</li>
-						</ul>
-					</div>
-					<div id="solutions" class="solutions">
-						<h2 class="section-title solutions-title">Solutions</h2>
-						<p class="solutions-subtitle">UniversalLoginSDK</p>
-						<ul class="solutions-list">
-							<li class="solutions-list-item">Create an on-chain identity to manage your funds</li>
-							<li class="solutions-list-item">Multi-Factor Authentication - utilize your devices to increase security of your funds in an easy way</li>
-							<li class="solutions-list-item">Universal Login - use your identity to log in and use different web 3.0 services</li>
-							<li class="solutions-list-item">Friendly name - use easy and readable ENS compatible names</li>
-							<li class="solutions-list-item">Pay fee in tokens - with meta tx you can pay all the fees in tokens so that you don’t need ether to cooperate with the network</li>
-						</ul>
-					</div>
+				<div id="problems" class="problems">
+					<h2 class="section-title problems-title">Problems</h2>
+					<p class="problems-subtitle">Ethereum is too complicated for the average user</p>
+					<ul class="problems-list">
+						<li class="problems-item">
+							<div class="problems-item-img-wrapper">
+								<img src="./img/icons/security-badge.svg" alt="Security badge" class="problems-item-img">
+							</div>
+							<h3 class="problems-item-title">Security</h3>
+							<p class="problems-item-text">Funds storage remains an unsolved problem. Users don't back up their accounts, don't own hardware wallets are rarely used, and don't use Multisigs.</p>
+						</li>
+						<li class="problems-item">
+							<div class="problems-item-img-wrapper">
+								<img src="./img/icons/usability.svg" alt="Web page" class="problems-item-img">
+							</div>
+							<h3 class="problems-item-title">Usability</h3>
+							<p class="problems-item-text">Usability is hard. A new Ethereum user needs to get familiar with wallets, plugins, exchanges before he can start using the desired application.</p>
+						</li>
+					</ul>
+				</div>
+				<div id="solutions" class="solutions">
+					<h2 class="section-title solutions-title">Solutions</h2>
+					<p class="solutions-subtitle">UniversalLoginSDK</p>
+					<ul class="solutions-list">
+						<li class="solutions-item">
+							<div class="solutions-item-img-wrapper">
+								<img src="./img/icons/multisig.svg" alt="Wallet" class="solutions-item-img">
+							</div>
+							<h3 class="solutions-item-title">Personal multisig</h3>
+							<p class="solutions-item-text">Personal multisig makes it easy to use multiple authentications and recovery options while allowing the interface to be simple to use.</p>
+						</li>
+						<li class="solutions-item">
+							<div class="solutions-item-img-wrapper">
+								<img src="./img/icons/meta.svg" alt="Simple UI" class="solutions-item-img">
+							</div>
+							<h3 class="solutions-item-title">Meta transactions</h3>
+							<p class="solutions-item-text">Meta transaction allows skipping a lot of complicated UI while providing a user simple and actionable UI.</p>
+						</li>
+						<li class="solutions-item">
+							<div class="solutions-item-img-wrapper">
+								<img src="./img/icons/universallogin-logo.svg" alt="Universallogin logo" class="solutions-item-img">
+							</div>
+							<h3 class="solutions-item-title">Universal Login</h3>
+							<p class="solutions-item-text">Universal login allows starting interacting with a favorite application, without setup, or redundant software. Just log in and use.</p>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</section>
 		<section id="process" class="process">
 			<div class="container">
-				<h2 class="section-title process-title">How does it work?</h2>
-				<div class="process-img-wrapper">
-					<div class="tooltip-block" tabindex="0">
-						<div class="tooltip tooltip-1st-key">You can confirm transaction from your mobile device.</div>
+				<div class="process-content">
+					<h2 class="section-title process-title">How does it works?</h2>
+					<div class="process-img-wrapper">
+						<div class="tooltip-block" tabindex="0">
+							<div class="tooltip tooltip-1st-key">You can confirm transaction from your mobile device.</div>
+						</div>
+						<div class="tooltip-block" tabindex="0">
+							<div class="tooltip tooltip-web-app">Any external web app or dapp can propose a transaction. The key does not contain any funds.</div>
+						</div>
+						<div class="tooltip-block" tabindex="0">
+							<div class="tooltip tooltip-relayer">Relayer takes signed messages and converts them into transactions. It gets a refund from the identity.</div>
+						</div>
+						<div class="tooltip-block" tabindex="0">
+							<div class="tooltip tooltip-wallet">Identity seamlessly interact with other wallets on Ethereum network.</div>
+						</div>
+						<div class="tooltip-block" tabindex="0">
+							<div class="tooltip tooltip-3rd-key">You can recover your lost keys using a trusted 3rd party.</div>
+						</div>
+						<div class="tooltip-block" tabindex="0">
+							<div class="tooltip tooltip-2nd-key">You can confirm transaction from your computer.</div>
+						</div>
+						<div class="tooltip-block" tabindex="0">
+							<div class="tooltip tooltip-identity">Identity smart contract stores all your funds that can be managed by external keys.</div>
+						</div>
+						<img src="./img/process.svg" alt="Process" class="process-img process-img-desktop">
+						<img src="./img/process-tablet.svg" alt="Process" class="process-img process-img-tablet" hidden>
+						<img src="./img/process-mobile.svg" alt="Process" class="process-img process-img-mob" hidden>
 					</div>
-					<div class="tooltip-block" tabindex="0">
-						<div class="tooltip tooltip-web-app">Any external web app or dapp can propose a transaction. The key does not contain any funds.</div>
+					<div class="code-section">
+						<h2 class="section-title code-title">Getting started</h2>
+						<p class="code-subtitle">With Universal Login SDK you can start creating applications in javascript in a few minutes.</p>
+						<div class="code-block">
+							<pre>
+								<code class="">
+$ npm install universal-login-sdk
+								</code>
+							</pre>
+						</div>
+
+						<div class="code-block">
+							<pre>
+								<code class="">
+import EthereumIdentitySDK from 'EthereumIdentitySDK';
+const sdk = new EthereumIdentitySDK(
+	'https://universal-login-relayer.herokuapp.com',
+	'https://rinkeby.infura.io'
+);
+
+const [privateKey, contractAddress] = await sdk.create(
+	'alex.my-id.test'
+);
+
+const message = {
+	from: contractAddress,
+	to: '0x88a5C2c290d9919e46F883EB62F7b8Dd9d0CC45b',
+	data: '0x',
+	value: '1000000000',
+	gasToken: '0xEB62F7b8Dd9d0CC45b88a5C2c290d9919e46F883EB',
+	gasPrice: 11000000000,
+	gasLimit: 1000000
+};
+
+const transactionId = await sdk.execute(message, privateKey);
+								</code>
+							</pre>
+						</div>
 					</div>
-					<div class="tooltip-block" tabindex="0">
-						<div class="tooltip tooltip-relayer">Relayer takes signed messages and converts them into transactions. It gets a refund from the identity.</div>
-					</div>
-					<div class="tooltip-block" tabindex="0">
-						<div class="tooltip tooltip-wallet">Identity seamlessly interact with other wallets on Ethereum network.</div>
-					</div>
-					<div class="tooltip-block" tabindex="0">
-						<div class="tooltip tooltip-3rd-key">You can recover your lost keys using a trusted 3rd party.</div>
-					</div>
-					<div class="tooltip-block" tabindex="0">
-						<div class="tooltip tooltip-2nd-key">You can confirm transaction from your computer.</div>
-					</div>
-					<div class="tooltip-block" tabindex="0">
-						<div class="tooltip tooltip-identity">Identity smart contract stores all your funds that can be managed by external keys.</div>
-					</div>
-					<img src="./img/process.svg" alt="Process" class="process-img process-img-desktop">
-					<img src="./img/process-tablet.svg" alt="Process" class="process-img process-img-tablet" hidden>
-					<img src="./img/process-mobile.svg" alt="Process" class="process-img process-img-mob" hidden>
 				</div>
 				<div class="links">
 					<h2 class="section-title links-title">What now?</h2>
@@ -158,10 +224,14 @@
 						</li>
 					</ul>
 				</div>
-				<div class="open-source">
+			</div>
+			<div class="open-source">
+				<div class="container">
 					<h2 class="section-title open-source-title">Open source contributors from all around the world.</h2>
 					<div class="map-img-container">
-						<img class="map-img" src="./img/map.svg" alt="">
+						<img class="map-img map-img-desktop" src="./img/map.svg" alt="Map">
+						<img class="map-img map-img-tablet" src="./img/map-tablet.svg" alt="Map" hidden>
+						<img class="map-img map-img-mobile" src="./img/map-mobile.svg" alt="Map" hidden>
 						<div class="pin pin-lodz">
 							<div class="pin-hover-area" tabindex="0">
 								<div class="pin-tooltip">
@@ -271,6 +341,31 @@
 					</div>
 				</div>
 			</div>
+			<!--
+			<div class="roadmap">
+				<div class="container">
+					<h2 class="section-title roadmap-title">Roadmap</h2>
+					<ul class="timeline">
+						<li class="timeline-item">
+							<p class="timeline-item-label">Devcon IV</p>
+							<p class="timeline-item-description">Prototype</p>
+						</li>
+						<li class="timeline-item">
+							<p class="timeline-item-label">End of Q1</p>
+							<p class="timeline-item-description">Semi-production ready SDK</p>
+						</li>
+						<li class="timeline-item">
+							<p class="timeline-item-label">End of Q2</p>
+							<p class="timeline-item-description">Open-source key manager and formal verification of contracts. </p>
+						</li>
+						<li class="timeline-item">
+							<p class="timeline-item-label">Devcon V</p>
+							<p class="timeline-item-description">Improved and polishes and public open relayer.</p>
+						</li>
+					</ul>
+				</div>
+				-->
+			</div>
 		</section>
 	</main>
 	<footer class="footer">
@@ -287,6 +382,9 @@
 	</footer>
 
 	<script src="./js/smooth-scroll.js"></script>
+	<link rel="stylesheet" href="./css/agate.css">
+	<script src="./js/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
 </body>
 
 </html>

@@ -1,0 +1,120 @@
+.roadmap
+  padding-bottom: 157px
+
+  +media(m)
+    padding-bottom: 135px
+
+  +media(s, 40px)
+    padding-bottom: 90px
+  
+.roadmap .container
+  +media(m)
+    padding: 0
+
+.roadmap-title
+  margin-bottom: 87px
+
+  +media(s, 40px)
+    margin-bottom: 22px
+
+.timeline
+  position: relative
+  display: flex
+  justify-content: space-between
+  max-width: 985px
+  margin: 0 auto
+
+  +media(m)
+    padding: 0 30px
+
+  +media(s, 168px)
+    padding: 0 15px
+
+  +media(s, 40px)
+    flex-direction: column
+    max-width: 200px
+    padding: 87px 0 40px 20px
+  
+.timeline::before
+  content: ''
+  position: absolute
+  top: 60px
+  left: 0
+  width: 100%
+  height: 2px
+  background: url('../img/decoration/roadmap-line.svg') center no-repeat
+  background-size: cover
+
+  +media(s, 40px)
+    height: 100%
+    width: 2px
+    top: 0
+    left: 0
+    background: url('../img/decoration/roadmap-vertical-line.png') center no-repeat
+    background-size: cover
+  
+.timeline-item
+  position: relative
+  max-width: 200px
+  width: 100%
+  text-align: center
+
+  +media(m)
+    max-width: 172px
+
+  +media(s, 40px)
+    text-align: left
+  
+.timeline-item::before
+  content: ''
+  position: absolute
+  top: 53px
+  left: 50%
+  transform: translateX(-50%)
+  width: 8px
+  height: 8px
+  background: #ffffff
+  border-radius: 50%
+  border: 3px solid #706AE1
+
+  +media(s, 40px)
+    top: 0
+    left: -26px
+    transform: translateX(0)
+
+.timeline-item::after
+  content: ''
+  position: absolute
+  top: 81px
+  left: 50%
+  transform: translateX(-50%)
+  width: 13px
+  height: 34px
+  background: url('../img/icons/arrow-bright.svg') center no-repeat
+  background-size: contain
+
+  +media(s, 40px)
+    top: 35px
+    left: 16px
+    // width: 10px
+    transform: translateX(0)
+
+.timeline-item + .timeline-item
+  +media(s, 40px)
+    margin-top: 60px
+  
+.timeline-item-label
+  padding-bottom: 120px
+  font-size: 14px
+  color: #FAFBFC
+  letter-spacing: -0.44px
+
+  +media(s, 40px)
+    padding-bottom: 75px
+
+.timeline-item-description
+  font-size: 15px
+  color: #FFFFFF
+  letter-spacing: -0.47px
+  line-height: 22px
+  opacity: 0.85

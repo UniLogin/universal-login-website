@@ -1,4 +1,4 @@
-# universal-login-website
+# UniversalLogin website
 
 ## Install
 
