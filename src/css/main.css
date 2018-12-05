@@ -323,7 +323,8 @@ body {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 75px 0 190px; }
+  max-width: 900px;
+  margin: 75px auto 190px; }
   @media (max-width: 990px) {
     .problems-list {
       margin: 75px 0 170px; } }
