@@ -1,27 +1,33 @@
 .process
   position: relative
   padding-top: 80px
+  background: -webkit-radial-gradient(15.67% 14.13%, 2192.05px, #0C0E57 0%, #14052C 100%)
+  background: -o-radial-gradient(15.67% 14.13%, 2192.05px, #0C0E57 0%, #14052C 100%)
   background: radial-gradient(2192.05px at 15.67% 14.13%, #0C0E57 0%, #14052C 100%)
 
   +media(s, 168px)
     padding: 50px 0 163px
-  
+
+  +media(s, 40px)
+    padding: 50px 0 330px
+
 .process-title
   margin-bottom: 40px
 
   +media(s, 168px)
     margin-bottom: 50px
-  
+
 .process-img-wrapper
   position: relative
   max-width: 1020px
-  margin: 0 auto
+  margin: 0 auto 200px
   text-align: center
 
 .tooltip-block
   position: absolute
+  outline: none
 
-  +media(m, 90px)
+  +media(s)
     display: none
 
 .tooltip-block:nth-child(1)
@@ -29,55 +35,89 @@
   left: 0
   width: 18%
   height: 21%
-  // background: red
+
+  +media(m)
+    top: 12%
+    left: 9%
+    width: 12%
+    height: 24%
 
 .tooltip-block:nth-child(2)
   top: 6%
   left: 34%
   width: 24%
   height: 21%
-  // background: green
+
+  +media(m)
+    top: 1%
+    left: 46%
+    width: 18%
+    height: 25%
 
 .tooltip-block:nth-child(3)
   top: 24%
   right: 0
   width: 22%
   height: 17%
-  // background: grey
+
+  +media(m)
+    top: 22%
+    right: 4%
+    width: 17%
+    height: 17%
 
 .tooltip-block:nth-child(4)
   top: 59%
   right: 13%
   width: 11%
   height: 23%
-  // background: pink
+
+  +media(m)
+    top: 55%
+    right: 9%
+    width: 14%
+    height: 21%
 
 .tooltip-block:nth-child(5)
   top: 72%
   right: 36%
-  width: 12%
+  width: 15%
   height: 28%
-  // background: blue
+
+  +media(m)
+    top: 74%
+    right: 37%
+    width: 14%
+    height: 26%
 
 .tooltip-block:nth-child(6)
   top: 65%
   left: 4%
   width: 21%
   height: 27%
-  // background: yellow
+
+  +media(m)
+    top: 61%
+    left: 5%
+    width: 26%
+    height: 25%
 
 .tooltip-block:nth-child(7)
   top: 37%
   left: 38%
   width: 22%
   height: 21%
-  // background: orange
+
+  +media(m)
+    top: 30%
+    left: 29%
+    width: 29%
+    height: 24%
 
 .tooltip
   display: none
   position: absolute
   width: 300px
-  height: 110px
   padding: 15px 20px
   background: #4149ba
   box-shadow: 0 6px 8px 0 #0A0642
@@ -90,7 +130,10 @@
 
 .tooltip-block:hover .tooltip
   display: block
-  
+.tooltip-block:focus .tooltip
+  +media(l, 200px)
+    display: block
+
 .tooltip::after
   content: ''
   position: absolute
@@ -104,16 +147,28 @@
   top: -11%
   left: 0
   transform: translateY(-100%)
-  
+
+.tooltip-1st-key::after
+  +media(m)
+    left: 8%
+
 .tooltip-web-app
   top: -11%
   left: 0
   transform: translateY(-100%)
 
+.tooltip-web-app::after
+  +media(m)
+    left: 13%
+
 .tooltip-relayer
   top: -11%
   right: 0
   transform: translateY(-100%)
+
+.tooltip-relayer::after
+  +media(m)
+    left: 75%
 
 .tooltip-wallet
   top: -11%
@@ -121,8 +176,12 @@
   transform: translateY(-100%)
 
 .tooltip-wallet::after
+  +media(m)
+    left: 75%
+
+.tooltip-wallet::after
   left: 78%
-  
+
 .tooltip-3rd-key
   top: -11%
   right: 0
@@ -136,14 +195,22 @@
   left: 0
   transform: translateY(-100%)
 
+.tooltip-2nd-key::after
+  +media(m)
+    left: 20%
+
 .tooltip-identity
   top: -11%
   left: 0
   transform: translateY(-100%)
 
+.tooltip-identity::after
+  +media(m)
+    left: 11%
 
 .process-img
   max-width: 100%
+  width: 100%
 
 .process-img-desktop
   +media(m)
@@ -153,10 +220,45 @@
   +media(m)
     display: inline-block
 
+  +media(s)
+    display: none
+
+.process-img-mob
+  +media(s)
+    display: inline-block
+
+.code-subtitle
+  max-width: 544px
+  margin: 24px auto 0
+  font-size: 18px
+  color: #dbdae3
+  letter-spacing: -0.56px
+  text-align: center
+  line-height: 32px
+
+.code-block
+  +media(m)
+    display: flex
+    flex-direction: column-reverse
+
+.code-block code
+  display: block
+  max-width: 685px
+  margin: 45px auto 0
+  padding: 0px 20px
+  border-radius: 10px
+  background: #110C22
+  line-height: 20px
+  text-align: left
+
+.code-btn-wrapper
+  text-align: center
+  margin-top: 30px
+
 .links
   position: relative
   padding: 50px 20px
-  margin-top: 40px
+  margin-top: 100px
   transform: translateY(100px)
   background: linear-gradient(160.94deg, #706AE1 0%, #3742B2 100%)
   box-shadow: 0 6px 8px 0 #0A0642
@@ -171,22 +273,54 @@
     width: 100%
     transform: translate(-50%, 0)
 
+  +media(s)
+    bottom: -200px
+
+.links::after
+  content: ''
+  position: absolute
+  right: 0
+  bottom: 0
+  width: 700px
+  height: 100%
+  background: url('../img/decoration/looper@1x.png') center no-repeat
+  background-size: contain
+  z-index: -1
+
+  +media(s, 40px)
+    height: 100%
+    width: 100%
+    background-size: cover
+
+
 .links-title
   margin-bottom: 51px
 
 .links-list
+  position: relative
   display: flex
   flex-wrap: wrap
   max-width: 870px
   margin: 0 auto
+  z-index: 10
+
+  +media(s, 40px)
+    flex-direction: column
+    align-items: center
 
 .links-list-item + .links-list-item
   margin-left: 2.7%
 
+  +media(s, 40px)
+    margin: 20px 0 0
+
 .links-list-item
   max-width: 270px
   width: 31.5%
-  
+
+  +media(s, 40px)
+    width: 100%
+
 .link
   display: block
   width: 100%
@@ -201,3 +335,9 @@
   color: #FFFFFF
   letter-spacing: -0.32px
   text-align: center
+
+  +media(s, 168px)
+    font-size: 15px
+
+.link:hover
+  background: rgba(255, 255, 255, 0.2)
