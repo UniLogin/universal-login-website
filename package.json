@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/main.css -w"
+    "compile:sass": "node-sass src/sass/main.scss dist/css/main.css -w",
+    "watch": "gulp"
   },
   "author": "Oleksandr",
   "license": "ISC",

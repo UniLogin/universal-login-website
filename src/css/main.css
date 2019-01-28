@@ -273,7 +273,7 @@ body {
   text-align: center;
   line-height: 32px;
   opacity: 0.8; }
-  @media (max-width: 900px) {
+  @media (max-width: 800px) {
     .hero-text {
       margin-bottom: 35px;
       font-size: 16px;
@@ -1492,5 +1492,4 @@ body {
           border-radius: 4px; }
 
 .editor-box {
-  height: -webkit-calc(100vh - 88px);
   height: calc(100vh - 88px); }
