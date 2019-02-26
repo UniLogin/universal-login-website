@@ -273,7 +273,7 @@ body {
   text-align: center;
   line-height: 32px;
   opacity: 0.8; }
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     .hero-text {
       margin-bottom: 35px;
       font-size: 16px;
