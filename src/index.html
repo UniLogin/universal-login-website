@@ -45,7 +45,7 @@
 			</div>
 			<div class="hero-content">
 				<h1 class="hero-title">UniversalLoginSDK</h1>
-				<p class="hero-text">UniversalLogin is a design pattern for storing funds and connecting to Ethereum applications, aiming to simplify new users on-boarding.</p>
+				<p class="hero-text">UniversalLoginSDK is composed of a set of smart contracts, a js lib, and a relayer that help build applications using ERC #725, #735, #1077 and #1078.</p>
 				<a href="https://github.com/universallogin" class="primary-btn" target="_blank">Get the SDK</a>
 			</div>
 		</div>
@@ -54,28 +54,42 @@
 		<section class="problems-solutions">
 			<div class="container">
 				<div id="problems" class="problems">
-					<h2 class="section-title problems-title">Problems</h2>
-					<p class="problems-subtitle">Ethereum is too complicated for the average user</p>
+					<h2 class="section-title problems-title">Problem</h2>
+					<p class="section-subtitle">Onboarding users to Ethereum is hard.</p>
 					<ul class="problems-list">
 						<li class="problems-item">
-							<div class="problems-item-img-wrapper">
-								<img src="./img/icons/security-badge.svg" alt="Security badge" class="problems-item-img">
+							<div class="problems-item-description">
+								<h3 class="problems-item-title">Onboarding</h3>
+								<p class="problems-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
 							</div>
-							<h3 class="problems-item-title">Security</h3>
-							<p class="problems-item-text">Funds storage remains an unsolved problem. Users don't back up their accounts, don't own hardware wallets (or rarely used), and don't use Multisigs.</p>
+							<img src="./img/icons/security-badge.svg" alt="Security badge" class="problems-item-img">
 						</li>
 						<li class="problems-item">
-							<div class="problems-item-img-wrapper">
-								<img src="./img/icons/usability.svg" alt="Web page" class="problems-item-img">
+							<img src="./img/icons/security-badge.svg" alt="Security badge" class="problems-item-img">
+							<div class="problems-item-description">
+								<h3 class="problems-item-title">Security</h3>
+								<p class="problems-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
 							</div>
-							<h3 class="problems-item-title">Usability</h3>
-							<p class="problems-item-text">Usability is hard. A new Ethereum user needs to get familiar with wallets, plugins, exchanges before he can start using the desired application.</p>
+						</li>
+						<li class="problems-item">
+							<div class="problems-item-description">
+								<h3 class="problems-item-title">Enabled browsers</h3>
+								<p class="problems-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+							</div>
+							<img src="./img/icons/security-badge.svg" alt="Security badge" class="problems-item-img">
+						</li>
+						<li class="problems-item">
+							<img src="./img/icons/security-badge.svg" alt="Security badge" class="problems-item-img">
+							<div class="problems-item-description">
+								<h3 class="problems-item-title">Fees</h3>
+								<p class="problems-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </p>
+							</div>
 						</li>
 					</ul>
 				</div>
 				<div id="solutions" class="solutions">
-					<h2 class="section-title solutions-title">Solutions</h2>
-					<p class="solutions-subtitle">UniversalLoginSDK</p>
+					<h2 class="section-title solutions-title">Solution</h2>
+					<p class="section-subtitle">UniversalLoginSDK</p>
 					<ul class="solutions-list">
 						<li class="solutions-item">
 							<div class="solutions-item-img-wrapper">
@@ -128,7 +142,7 @@
 						<div class="tooltip-block" tabindex="0">
 							<div class="tooltip tooltip-identity">Identity smart contract stores all your funds that can be managed by external keys.</div>
 						</div>
-						<img src="./img/process.svg" alt="Process" class="process-img process-img-desktop">
+						<img src="./img/process1.svg" alt="Process" class="process-img process-img-desktop">
 						<img src="./img/process-tablet.svg" alt="Process" class="process-img process-img-tablet" hidden>
 						<img src="./img/process-mobile.svg" alt="Process" class="process-img process-img-mob" hidden>
 					</div>
@@ -176,13 +190,16 @@ const transactionId = await sdk.execute(message, privateKey);
 					<h2 class="section-title links-title">What now?</h2>
 					<ul class="links-list">
 						<li class="links-list-item">
-							<a href="https://example.universallogin.io" class="link" target="_blank">Example app</a>
+							<a href="https://example.universallogin.io" class="link" target="_blank">Play with an example app</a>
 						</li>
 						<li class="links-list-item">
-							<a href="https://universalloginsdk.readthedocs.io/en/latest/" class="link" target="_blank">Documentation</a>
+							<a href="#" class="link" target="_blank">Check out the tutorial</a>
 						</li>
 						<li class="links-list-item">
-							<a href="https://github.com/universallogin" class="link" target="_blank">GitHub</a>
+							<a href="https://github.com/universallogin" class="link" target="_blank">GitHub repository</a>
+						</li>
+						<li class="links-list-item">
+							<a href="#" class="link" target="_blank">Discord channel</a>
 						</li>
 					</ul>
 				</div>
@@ -190,158 +207,98 @@ const transactionId = await sdk.execute(message, privateKey);
 		</section>
 		<section class="creators">
 			<div class="container">
-				<h2 id="team" class="section-title creators-title">Making of</h2>
+				<h2 id="team" class="section-title creators-title">Core Team</h2>
 				<ul class="creators-list">
 					<li class="creators-list-item">
-						<h3 class="creators-label">Advisor</h3>
-						<div class="creator">
-							<img src="./img/photo/alex.jpg" alt="" class="creator-img">
-							<p class="creator-name">Alex Van de Sande</p>
-						</div>
+						<img src="./img/photo/marek.jpg" alt="Marek Kirejczyk photo" class="creator-img">
+						<p class="creator-name">Marek Kirejczyk</p>
 					</li>
 					<li class="creators-list-item">
-						<h3 class="creators-label">Core Team in Ethworks</h3>
-						<div class="creators-ethworks">
-							<div class="creator">
-								<img src="./img/photo/marek.jpg" alt="" class="creator-img">
-								<p class="creator-name">Marek Kirejczyk</p>
-							</div>
-							<div class="creator">
-								<img src="./img/photo/justyna.jpg" alt="" class="creator-img">
-								<p class="creator-name">Justyna Broniszewska</p>
-							</div>
-						</div>
+						<img src="./img/photo/justyna.jpg" alt="Justyna Broniszewska photo" class="creator-img">
+						<p class="creator-name">Justyna Broniszewska</p>
+					</li>
+					<li class="creators-list-item">
+						<img src="./img/photo/jaroslaw.jpg" alt="Jarosław Steckiewicz photo" class="creator-img">
+						<p class="creator-name">Jarosław Steckiewicz</p>
+					</li>
+					<li class="creators-list-item">
+						<img src="./img/photo/tomasz.jpg" alt="Tomasz Kazana photo" class="creator-img">
+						<p class="creator-name">Tomasz Kazana</p>
+					</li>
+					<li class="creators-list-item">
+						<img src="./img/photo/alex.jpg" alt="Alex Van de Sande photo" class="creator-img">
+						<p class="creator-name">Alex Van de Sande</p>
+						<p class="creator-label">Advisor</p>
 					</li>
 				</ul>
-				<div class="grants">
-					<h2 class="section-title grants-title">Grants</h2>
-					<ul class="grants-list">
-						<li class="grants-list-item">
-							<img src="./img/eth-price.svg" alt="ETH Price logo" class="grants-img">
+				<h2 id="team" class="section-title contributors-title">Contributors</h2>
+				<ul class="contributors-list">
+					<li class="contributors-list-item">
+						<a href="#" class="contributor-link">
+							<img src="./img/photo/contributors/1.jpg" alt="contributor photo" class="contributor-img">
+						</a>
+					</li>
+					<li class="contributors-list-item">
+						<a href="#" class="contributor-link">
+							<img src="./img/photo/contributors/2.jpg" alt="contributor photo" class="contributor-img">
+						</a>
+					</li>
+					<li class="contributors-list-item">
+						<a href="#" class="contributor-link">
+							<img src="./img/photo/contributors/3.jpg" alt="contributor photo" class="contributor-img">
+						</a>
+					</li>
+					<li class="contributors-list-item">
+						<a href="#" class="contributor-link">
+							<img src="./img/photo/contributors/4.jpg" alt="contributor photo" class="contributor-img">
+						</a>
+					</li>
+					<li class="contributors-list-item">
+						<a href="#" class="contributor-link">
+							<img src="./img/photo/contributors/5.jpg" alt="contributor photo" class="contributor-img">
+						</a>
+					</li>
+					<li class="contributors-list-item">
+						<a href="#" class="contributor-link">
+							<img src="./img/photo/contributors/6.jpg" alt="contributor photo" class="contributor-img">
+						</a>
+					</li>
+					<li class="contributors-list-item">
+						<a href="#" class="contributor-link">
+							<img src="./img/photo/contributors/7.jpg" alt="contributor photo" class="contributor-img">
+						</a>
+					</li>
+					<li class="contributors-list-item">
+						<a href="#" class="contributor-link">
+							<img src="./img/photo/contributors/8.jpg" alt="contributor photo" class="contributor-img">
+						</a>
+					</li>
+					<li class="contributors-list-item">
+						<a href="#" class="contributor-link">
+							<img src="./img/photo/contributors/9.jpg" alt="contributor photo" class="contributor-img">
+						</a>
+					</li>
+				</ul>
+				<div class="working-group">
+					<h2 class="section-title working-group-title">Working group</h2>
+					<p class="working-group-subtitle">Companies and startups working on the integration with Universal Login and cooperating on development.</p>
+					<ul class="working-group-list">
+						<li class="working-group-list-item">
+							<img src="./img/deepit.svg" alt="company logo" class="working-group-img deepit-img">
 						</li>
-						<li class="grants-list-item">
-							<img src="./img/eth-community@1x.png" srcset="./img/eth-community@2x.png" alt="Ethereum Community Fund logo" class="grants-img eth-community-img">
+						<li class="working-group-list-item">
+							<img src="./img/kickBack.png" alt="company logo" class="working-group-img kickback-img">
+						</li>
+						<li class="working-group-list-item">
+							<img src="./img/iexec.png" alt="company logo" class="working-group-img iexec-img">
+						</li>
+						<li class="working-group-list-item">
+							<img src="./img/jarvis.png" alt="company logo" class="working-group-img iexec-img">
 						</li>
 					</ul>
 				</div>
 			</div>
-			<div class="open-source">
-				<div class="container">
-					<h2 class="section-title open-source-title">Open source contributors from all around the world.</h2>
-					<div class="map-img-container">
-						<img class="map-img map-img-desktop" src="./img/map.svg" alt="Map">
-						<img class="map-img map-img-tablet" src="./img/map-tablet.svg" alt="Map" hidden>
-						<img class="map-img map-img-mobile" src="./img/map-mobile.svg" alt="Map" hidden>
-						<div class="pin pin-lodz">
-							<div class="pin-hover-area" tabindex="0">
-								<div class="pin-tooltip">
-									<div class="pin-tooltip-row">
-										<img src="./img/contributors/vanjan.jpeg" alt="" class="pin-tooltip-avatar">
-										<div>
-											<p class="pin-tooltip-name">Jan K</p>
-											<p class="pin-tooltip-nickname">vanjan</p>
-											<p class="pin-tooltip-location">Lodz, Poland</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="pin pin-warsaw">
-							<div class="pin-hover-area" tabindex="0">
-								<div class="pin-tooltip">
-									<div class="pin-tooltip-row">
-										<img src="./img/contributors/marekkirejczyk.jpeg" alt="" class="pin-tooltip-avatar">
-										<div>
-											<p class="pin-tooltip-name">Marek Kirejczyk</p>
-											<p class="pin-tooltip-nickname">marekkirejczyk</p>
-											<p class="pin-tooltip-location">Warsaw, Poland</p>
-										</div>
-									</div>
-									<div class="pin-tooltip-row">
-										<img src="./img/contributors/justyna.jpeg" alt="" class="pin-tooltip-avatar">
-										<div>
-											<p class="pin-tooltip-name">Justyna Broniszewska</p>
-											<p class="pin-tooltip-nickname">JustynaBroniszewska</p>
-											<p class="pin-tooltip-location">Warsaw, Poland</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="pin pin-bulgaria">
-							<div class="pin-hover-area" tabindex="0">
-								<div class="pin-tooltip">
-									<div class="pin-tooltip-row">
-										<img src="./img/contributors/spasov.png" alt="" class="pin-tooltip-avatar">
-										<div>
-											<p class="pin-tooltip-name">George Spasov</p>
-											<p class="pin-tooltip-nickname">Perseverance</p>
-											<p class="pin-tooltip-location">Sofia, Bulgaria</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="pin pin-genoa">
-							<div class="pin-hover-area" tabindex="0">
-								<div class="pin-tooltip">
-									<div class="pin-tooltip-row">
-										<img src="./img/contributors/canepat.jpeg" alt="" class="pin-tooltip-avatar">
-										<div>
-											<p class="pin-tooltip-name">Tullio Canepa</p>
-											<p class="pin-tooltip-nickname">canepat</p>
-											<p class="pin-tooltip-location">Genoa, Italy</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="pin pin-boston">
-							<div class="pin-hover-area" tabindex="0">
-								<div class="pin-tooltip">
-									<div class="pin-tooltip-row">
-										<img src="./img/contributors/kyrrui.jpeg" alt="" class="pin-tooltip-avatar">
-										<div>
-											<p class="pin-tooltip-name">Kyle Bryant</p>
-											<p class="pin-tooltip-nickname">Kyrrui</p>
-											<p class="pin-tooltip-location">Boston, USA</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="pin pin-freemont">
-							<div class="pin-hover-area" tabindex="0">
-								<div class="pin-tooltip">
-									<div class="pin-tooltip-row">
-										<img src="./img/contributors/lee.png" alt="" class="pin-tooltip-avatar">
-										<div>
-											<p class="pin-tooltip-name">Shine Lee</p>
-											<p class="pin-tooltip-nickname">shine2lay</p>
-											<p class="pin-tooltip-location">Freemont, USA</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="pin pin-rio">
-							<div class="pin-hover-area" tabindex="0">
-								<div class="pin-tooltip">
-									<div class="pin-tooltip-row">
-										<img src="./img/contributors/alexvandesande.jpeg" alt="" class="pin-tooltip-avatar">
-										<div>
-											<p class="pin-tooltip-name">Alex Van de Sande</p>
-											<p class="pin-tooltip-nickname">alexvandesande</p>
-											<p class="pin-tooltip-location">Rio de Janeiro</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--
+			
 			<div class="roadmap">
 				<div class="container">
 					<h2 class="section-title roadmap-title">Roadmap</h2>
@@ -352,7 +309,7 @@ const transactionId = await sdk.execute(message, privateKey);
 						</li>
 						<li class="timeline-item">
 							<p class="timeline-item-label">End of Q1</p>
-							<p class="timeline-item-description">Semi-production ready SDK</p>
+							<p class="timeline-item-description">Production ready SDK</p>
 						</li>
 						<li class="timeline-item">
 							<p class="timeline-item-label">End of Q2</p>
@@ -364,8 +321,8 @@ const transactionId = await sdk.execute(message, privateKey);
 						</li>
 					</ul>
 				</div>
-				-->
 			</div>
+
 		</section>
 	</main>
 	<footer class="footer">
@@ -374,9 +331,23 @@ const transactionId = await sdk.execute(message, privateKey);
 				<div>
 					<img src="./img/ethworks-logo-light.svg" alt="Ethworks logo" class="footer-img">
 				</div>
-				<address>
-					<a class="footer-mail" href="mailto:hello@ethworks.io">mail: hello@ethworks.io</a>
-				</address>
+				<ul class="footer-links">
+					<li class="footer-links-item">
+						<a href="#" class="footer-link" target="blank">
+							<img src="./img/icons/medium.svg" alt="link icon">
+						</a>
+					</li>
+					<li class="footer-links-item">
+						<a href="#" class="footer-link" target="blank">
+							<img src="./img/icons/discord.svg" alt="link icon">
+						</a>
+					</li>
+					<li class="footer-links-item">
+						<a href="mailto:hello@ethworks.io" class="footer-link">
+							<img src="./img/icons/mail.svg" alt="link icon">
+						</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</footer>
