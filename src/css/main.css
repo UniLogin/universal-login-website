@@ -763,13 +763,14 @@ body {
   .process-img-desktop {
     display: none; } }
 
-@media (max-width: 900px) {
-  .process-img-tablet {
-    display: inline-block; } }
-
-@media (max-width: 600px) {
-  .process-img-tablet {
-    display: none; } }
+.process-img-tablet {
+  display: none; }
+  @media (max-width: 900px) {
+    .process-img-tablet {
+      display: inline-block; } }
+  @media (max-width: 600px) {
+    .process-img-tablet {
+      display: none; } }
 
 @media (max-width: 600px) {
   .process-img-mob {
