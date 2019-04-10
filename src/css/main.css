@@ -141,6 +141,14 @@ body {
     .aside-nav {
       display: none; } }
 
+.aside-nav-item:hover {
+  opacity: 0.9; }
+
+.aside-nav-item:active {
+  -webkit-transform: translateY(2px);
+      -ms-transform: translateY(2px);
+          transform: translateY(2px); }
+
 .aside-nav-item + .aside-nav-item {
   margin-top: 13px; }
 
@@ -1361,6 +1369,9 @@ body {
   @media (max-width: 600px) {
     .footer-links {
       margin-top: 40px; } }
+
+.footer-links-item:hover {
+  opacity: 0.8; }
 
 .footer-links-item + .footer-links-item {
   margin-left: 35px; }
