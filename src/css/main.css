@@ -1083,7 +1083,7 @@ body {
   margin: 0 auto 160px; }
   @media (max-width: 900px) {
     .working-group {
-      margin-bottom: 100px; } }
+      margin-bottom: 80px; } }
 
 .working-group-title {
   margin-bottom: 25px; }
@@ -1113,7 +1113,9 @@ body {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  max-width: 680px;
+  margin: 0 auto; }
   @media (max-width: 500px) {
     .working-group-list {
       -webkit-box-orient: vertical;
@@ -1125,7 +1127,7 @@ body {
 @media (max-width: 768px) {
   .working-group-list-item {
     width: 50%;
-    margin-bottom: 30px;
+    margin-bottom: 38px;
     text-align: center; } }
 
 @media (max-width: 768px) {
@@ -1135,8 +1137,11 @@ body {
 .kickback-img {
   max-width: 131px; }
 
-.iexec-img {
-  max-width: 172px; }
+.contract-land-img {
+  max-width: 155px; }
+
+.jarvis-img {
+  max-width: 120px; }
 
 .contributors-list {
   display: -webkit-box;
