@@ -58,8 +58,8 @@
 						</div>
 					</div>
 					<div class="hero-content">
-						<h1 class="hero-title">UniversalLoginSDK</h1>
-						<p class="hero-text">UniversalLoginSDK is composed of a set of smart contracts, a js lib, and a relayer that help build applications using ERC #725, #735, #1077 and #1078.</p>
+						<h1 class="hero-title">Universal Login</h1>
+						<p class="hero-text">UniversalLogin is an open-source project that aims to solve the usability problems of Ethereum.</p>
 						<a href="https://github.com/universallogin" class="primary-btn" target="_blank">Get the SDK</a>
 					</div>
 				</div>
@@ -74,36 +74,36 @@
 							<li class="problems-item">
 								<div class="problems-item-description">
 									<h3 class="problems-item-title">Onboarding</h3>
-									<p class="problems-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+									<p class="problems-item-text">Entering Ethereum space for new users is hard. A popular tutorial show 17 steps user have to go through to start using Ethereum based dapps. That creates a steep entry curve and slows adoption.</p>
 								</div>
 								<img src="./img/icons/onboarding.svg" alt="Security badge" class="problems-item-img">
 							</li>
 							<li class="problems-item">
 								<img src="./img/icons/security-badge.svg" alt="Security badge" class="problems-item-img">
 								<div class="problems-item-description">
-									<h3 class="problems-item-title">Security</h3>
-									<p class="problems-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+									<h3 class="problems-item-title">Secure fund storage</h3>
+									<p class="problems-item-text">Ethereum needs a better way to store funds. All methods are vulnerable to theft and loss. UX studies show users don't back up keys. Hardware and multisig wallets and hard to use and solve the problem only partially.</p>
 								</div>
 							</li>
 							<li class="problems-item">
 								<div class="problems-item-description">
-									<h3 class="problems-item-title">Enabled browsers</h3>
-									<p class="problems-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+									<h3 class="problems-item-title">Ethereum enabled browsers</h3>
+									<p class="problems-item-text">New users are required to install an Ethereum enabled browser or a plugin to an existing browser. That is a conversion killer that for many businesses make a difference between profitable and non-existing.</p>
 								</div>
 								<img src="./img/icons/browsers.svg" alt="Security badge" class="problems-item-img">
 							</li>
 							<li class="problems-item">
 								<img src="./img/icons/fees.svg" alt="Security badge" class="problems-item-img">
 								<div class="problems-item-description">
-									<h3 class="problems-item-title">Fees</h3>
-									<p class="problems-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </p>
+									<h3 class="problems-item-title">Token Fees</h3>
+									<p class="problems-item-text">Token transfer fees need to be paid in ether. That brings a lot of challenges to token related start-ups when it comes to designing and building user-friendly applications and companies.</p>
 								</div>
 							</li>
 						</ul>
 					</div>
 					<div id="solutions" class="solutions">
 						<h2 class="section-title solutions-title">Solution</h2>
-						<p class="section-subtitle">UniversalLoginSDK</p>
+						<p class="section-subtitle">Universal Login combines three major technological concepts.</p>
 						<ul class="solutions-list">
 							<li class="solutions-item">
 								<div class="solutions-item-img-wrapper">
@@ -145,7 +145,7 @@
 								<div class="tooltip tooltip-relayer">Relayer takes signed messages and converts them into transactions. It gets a refund from the identity.</div>
 							</div>
 							<div class="tooltip-block" tabindex="0">
-								<div class="tooltip tooltip-wallet">Identity seamlessly interact with other wallets on Ethereum network.</div>
+								<div class="tooltip tooltip-wallet">Wallet contract seamlessly interact with other wallets on Ethereum network.</div>
 							</div>
 							<div class="tooltip-block" tabindex="0">
 								<div class="tooltip tooltip-3rd-key">You can recover your lost keys using a trusted 3rd party.</div>
@@ -154,7 +154,7 @@
 								<div class="tooltip tooltip-2nd-key">You can confirm transaction from your computer.</div>
 							</div>
 							<div class="tooltip-block" tabindex="0">
-								<div class="tooltip tooltip-identity">Identity smart contract stores all your funds that can be managed by external keys.</div>
+								<div class="tooltip tooltip-identity">Wallet smart contract stores all your funds that can be managed by external keys.</div>
 							</div>
 							<svg class="process-img process-img-desktop" width="1021px" height="615px" viewBox="0 0 1021 615" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 									<title>Process img</title>
@@ -1251,7 +1251,7 @@
 								<stop offset="1" stop-color="#05062C" stop-opacity="0.01"/>
 								</linearGradient>
 								</defs>
-							</svg>							
+							</svg>
 							<img src="./img/process-mobile.svg" alt="Process" class="process-img process-img-mob" hidden>
 						</div>
 						<div class="code-section">
@@ -1264,7 +1264,7 @@
 									</code>
 								</pre>
 							</div>
-	
+
 							<div class="code-block">
 								<pre>
 									<code class="">
@@ -1273,11 +1273,11 @@
 		'https://universal-login-relayer.herokuapp.com',
 		'https://rinkeby.infura.io'
 	);
-	
+
 	const [privateKey, contractAddress] = await sdk.create(
 		'alex.my-id.test'
 	);
-	
+
 	const message = {
 		from: contractAddress,
 		to: '0x88a5C2c290d9919e46F883EB62F7b8Dd9d0CC45b',
@@ -1287,7 +1287,7 @@
 		gasPrice: 11000000000,
 		gasLimit: 1000000
 	};
-	
+
 	const transactionId = await sdk.execute(message, privateKey);
 									</code>
 								</pre>
@@ -1307,7 +1307,7 @@
 							</li>
 							<li class="links-list-item">
 								<img src="./img/icons/tutorial.svg" alt="app">
-								<a href="#" class="link" target="_blank">Check out the tutorial</a>
+								<a href="https://universalloginsdk.readthedocs.io/en/latest/index.html" class="link" target="_blank">Check out the documentation</a>
 							</li>
 							<li class="links-list-item">
 								<img src="./img/icons/github.svg" alt="app">
@@ -1322,34 +1322,38 @@
 					<h2 id="team" class="section-title creators-title">Core Team</h2>
 					<ul class="creators-list">
 						<li class="creators-list-item">
+								<a href="https://github.com/alexvandesande" target="blank">
+									<img src="./img/photo/alex.jpg" alt="Alex Van de Sande photo" class="creator-img">
+									<p class="creator-name">Alex Van de Sande</p>
+									<p class="creator-label">Founder</p>
+								</a>
+							</li>
+						<li class="creators-list-item">
 							<a href="https://github.com/marekkirejczyk" target="blank">
 								<img src="./img/photo/marek.jpg" alt="Marek Kirejczyk photo" class="creator-img">
 								<p class="creator-name">Marek Kirejczyk</p>
+								<p class="creator-label">Founder, Lead engineer</p>
 							</a>
 						</li>
 						<li class="creators-list-item">
 							<a href="https://github.com/JustynaBroniszewska" target="blank">
 								<img src="./img/photo/justyna.jpg" alt="Justyna Broniszewska photo" class="creator-img">
 								<p class="creator-name">Justyna Broniszewska</p>
+								<p class="creator-label">Software engineer</p>
 							</a>
 						</li>
 						<li class="creators-list-item">
 							<a href="https://github.com/xitronix" target="blank">
 								<img src="./img/photo/jaroslaw.jpg" alt="Jarosław Steckiewicz photo" class="creator-img">
 								<p class="creator-name">Jarosław Steckiewicz</p>
+								<p class="creator-label">Software engineer</p>
 							</a>
 						</li>
 						<li class="creators-list-item">
 							<a href="https://github.com/tkazana-eth" target="blank">
 								<img src="./img/photo/tomasz.jpg" alt="Tomasz Kazana photo" class="creator-img">
 								<p class="creator-name">Tomasz Kazana</p>
-							</a>
-						</li>
-						<li class="creators-list-item">
-							<a href="https://github.com/alexvandesande" target="blank">
-								<img src="./img/photo/alex.jpg" alt="Alex Van de Sande photo" class="creator-img">
-								<p class="creator-name">Alex Van de Sande</p>
-								<p class="creator-label">Advisor</p>
+								<p class="creator-label">Research, formal verification</p>
 							</a>
 						</li>
 					</ul>
@@ -1415,7 +1419,7 @@
 						</ul>
 					</div>
 				</div>
-				
+
 				<div class="roadmap">
 					<div class="container">
 						<h2 class="section-title roadmap-title">Roadmap</h2>
@@ -1426,11 +1430,11 @@
 							</li>
 							<li class="timeline-item">
 								<p class="timeline-item-label">End of Q1</p>
-								<p class="timeline-item-description">Production ready SDK</p>
+								<p class="timeline-item-description">SDK ready for pilots.</p>
 							</li>
 							<li class="timeline-item">
-								<p class="timeline-item-label">End of Q2</p>
-								<p class="timeline-item-description">Open-source key manager and formal verification of contracts. </p>
+								<p class="timeline-item-label">Q2/Q3</p></p>
+								<p class="timeline-item-description">Open-source wallet and formally verified of smart contracts.</p>
 							</li>
 							<li class="timeline-item">
 								<p class="timeline-item-label">Devcon V</p>
@@ -1439,7 +1443,7 @@
 						</ul>
 					</div>
 				</div>
-	
+
 			</section>
 		</main>
 	</div>
