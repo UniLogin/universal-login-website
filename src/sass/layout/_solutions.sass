@@ -1,15 +1,15 @@
 .problems-solutions
   position: relative
-  padding: 123px 0 180px
+  padding: 123px 0 0
   background: -webkit-radial-gradient(15.67% 14.13%, 2038.19px, #0C0E57 0%, #14052C 100%)
   background: -o-radial-gradient(15.67% 14.13%, 2038.19px, #0C0E57 0%, #14052C 100%)
   background: radial-gradient(2038.19px at 15.67% 14.13%, #0C0E57 0%, #14052C 100%)
 
   +media(m, 90px)
-    padding: 50px 0 110px
+    padding: 80px 0 100px
   
   +media(s, 168px)
-    padding: 50px 0 70px
+    padding: 50px 0 110px
   
 .problems-solutions::after
   content: ''
@@ -27,26 +27,6 @@
   position: relative
   z-index: 10
 
-.solutions
-  margin-left: 30px
-
-  +media(s, 168px)
-    margin: 50px 0 0
-
-.problems-list
-  display: flex
-  justify-content: space-between
-  max-width: 900px
-  margin: 75px auto 190px
-
-  +media(m, 90px)
-    margin: 75px 0 170px
-
-  +media(s)  
-    flex-direction: column
-    align-items: center
-    margin: 60px 0 120px
-
 .solutions-list
   display: flex
   justify-content: center
@@ -60,7 +40,6 @@
     flex-direction: column
     align-items: center
   
-.problems-item,
 .solutions-item
   max-width: 377px
   width: 100%
@@ -72,22 +51,9 @@
   +media(s)  
     width: 350px
     max-width: 100%
-    
-.problems-item
-  +media(s) 
-    margin-bottom: 130px
-    
-.problems-item + .problems-item
-  margin-left: 40px
-
-  +media(s)  
-    margin-left: 0
-
-.problems-item:last-child
-  margin-bottom: 0
 
 .solutions-item
-  margin-bottom: 130px
+  margin-bottom: 80px
   
 .solutions-item + .solutions-item
   margin-left: 18px
@@ -101,8 +67,6 @@
 .solutions-item:last-child
   +media(m, 90px)
     margin: 0
-  
-.problems-item-img-wrapper,
 .solutions-item-img-wrapper
   margin-bottom: 40px
   min-height: 139px
@@ -110,7 +74,6 @@
   align-items: center
   justify-content: center
   
-.problems-item-title,
 .solutions-item-title
   +linear-gradient(135deg, #706AE1 0%, #3742B2 100%)
   width: 100%
@@ -125,12 +88,13 @@
   box-shadow: 0 6px 8px 0 #0A0642
   border-radius: 6px
 
-.problems-item-text,
 .solutions-item-text
   max-width: 254px
   margin: 0 auto
+  opacity: 0.85
+  font-family: 'Geomanist-Regular', sans-serif
   font-size: 15px
-  color: #dadae5
+  color: #FFFFFF
   letter-spacing: -0.47px
   text-align: center
   line-height: 20.9px
@@ -141,7 +105,6 @@
 .solutions-item-text
   max-width: 320px
 
-.problems-subtitle,
 .solutions-subtitle
   font-size: 16px
   color: #FFFFFF

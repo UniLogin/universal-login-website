@@ -1,0 +1,17 @@
+.aside-nav
+  position: fixed
+  top: 30%
+  right: 15px
+  z-index: 9999
+
+  +media(s)
+    display: none
+
+.aside-nav-item:hover
+  opacity: 0.9
+
+.aside-nav-item:active
+  transform: translateY(2px)
+  
+.aside-nav-item + .aside-nav-item
+  margin-top: 13px

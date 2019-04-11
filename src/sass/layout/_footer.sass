@@ -14,18 +14,18 @@
   align-items: center
   justify-content: space-between
 
-  +media(s, 168px)
+  +media(s)
     flex-direction: column
     align-items: center
 
-.footer-mail
-  opacity: 0.8
-  font-size: 18px
-  color: #FFFFFF
-  letter-spacing: -0.56px
-  text-align: center
-  line-height: 32px
-  font-style: normal
+.footer-links
+  display: flex
 
-  +media(s, 168px)
-    margin-top: 30px
+  +media(s)
+    margin-top: 40px
+
+.footer-links-item:hover
+  opacity: 0.8
+  
+.footer-links-item + .footer-links-item
+  margin-left: 35px

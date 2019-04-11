@@ -1,0 +1,19 @@
+.line {
+  stroke-dasharray: 100;
+	stroke-dashoffset:300;
+	stroke-dasharray: 8, 8;
+	animation: dash 8s linear infinite;
+  stroke:#18DAA2;
+  stroke-width:2;
+  opacity: 0.4;
+}
+
+.line2 {
+  animation: dash 8s linear reverse infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
