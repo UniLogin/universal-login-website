@@ -1260,7 +1260,7 @@
 							<div class="code-block">
 								<pre>
 									<code class="">
-	$ npm install universal-login-sdk
+	$ npm install @universal-login/sdk
 									</code>
 								</pre>
 							</div>
@@ -1268,27 +1268,25 @@
 							<div class="code-block">
 								<pre>
 									<code class="">
-	import EthereumIdentitySDK from 'EthereumIdentitySDK';
-	const sdk = new EthereumIdentitySDK(
-		'https://universal-login-relayer.herokuapp.com',
-		'https://rinkeby.infura.io'
-	);
+const UniversalLoginSDK = require('@universal-login/sdk').default;
 
-	const [privateKey, contractAddress] = await sdk.create(
-		'alex.my-id.test'
-	);
+const sdk = new UniversalLoginSDK(
+	'https://universal-login-relayer.herokuapp.com',
+	"https://rinkeby.infura.io"
+);
+const [privateKey, contractAddress] = await sdk.create('PUT_NICK_HERE.my-id.test');
 
-	const message = {
-		from: contractAddress,
-		to: '0x88a5C2c290d9919e46F883EB62F7b8Dd9d0CC45b',
-		data: '0x',
-		value: '1000000000',
-		gasToken: '0xEB62F7b8Dd9d0CC45b88a5C2c290d9919e46F883EB',
-		gasPrice: 11000000000,
-		gasLimit: 1000000
-	};
+const message = {
+	from: contractAddress,
+	to: '0xf4C1A210B6436eEe17fDEe880206E9d3Ab178c18',
+	data: '0x',
+	value: '1000000000000000',
+	gasToken: '0x5f81e2afde8297f90b3f9179f8f3ea172f3155a8',
+	gasPrice: 11000000000,
+	gasLimit: 1000000
+};
 
-	const transactionId = await sdk.execute(message, privateKey);
+const transactionId = await sdk.execute(message, privateKey);
 									</code>
 								</pre>
 							</div>
