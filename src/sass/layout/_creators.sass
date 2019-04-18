@@ -118,14 +118,15 @@
   align-items: center
   flex-wrap: wrap
   justify-content: space-between
-  max-width: 680px
   margin: 0 auto
 
   +media(s, -100px)
     flex-direction: column
   
 .working-group-list-item
-  +media(s, 168px)
+  width: 15%
+  text-align: center
+  +media(m, 90px)
     width: 50%
     margin-bottom: 38px
     text-align: center
@@ -143,6 +144,9 @@
 
 .jarvis-img
   max-width: 120px
+
+.iexec-img
+  width: 112px
   
 .contributors-list
   display: flex

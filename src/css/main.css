@@ -1114,7 +1114,6 @@ body {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 680px;
   margin: 0 auto; }
   @media (max-width: 500px) {
     .working-group-list {
@@ -1124,11 +1123,14 @@ body {
           -ms-flex-direction: column;
               flex-direction: column; } }
 
-@media (max-width: 768px) {
-  .working-group-list-item {
-    width: 50%;
-    margin-bottom: 38px;
-    text-align: center; } }
+.working-group-list-item {
+  width: 15%;
+  text-align: center; }
+  @media (max-width: 990px) {
+    .working-group-list-item {
+      width: 50%;
+      margin-bottom: 38px;
+      text-align: center; } }
 
 @media (max-width: 768px) {
   .working-group-list-item:nth-child(odd) {
@@ -1142,6 +1144,9 @@ body {
 
 .jarvis-img {
   max-width: 120px; }
+
+.iexec-img {
+  width: 112px; }
 
 .contributors-list {
   display: -webkit-box;
