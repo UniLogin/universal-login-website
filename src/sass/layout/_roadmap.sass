@@ -22,7 +22,7 @@
   display: flex
   justify-content: space-between
   max-width: 985px
-  margin: 0 auto
+  margin: 195px auto 0
 
   +media(m)
     padding: 0 30px
@@ -38,7 +38,7 @@
 .timeline::before
   content: ''
   position: absolute
-  top: 60px
+  top: 80px
   left: 0
   width: 100%
   height: 2px
@@ -68,7 +68,7 @@
 .timeline-item::before
   content: ''
   position: absolute
-  top: 53px
+  top: 74px
   left: 50%
   transform: translateX(-50%)
   width: 8px
@@ -83,7 +83,7 @@
     transform: translateX(0)
 
 .timeline-item.complete::before
-  top: 51px
+  top: 71px
   width: 20px
   height: 20px
   border: none
@@ -93,7 +93,7 @@
 .timeline-item::after
   content: ''
   position: absolute
-  top: 81px
+  top: 110px
   left: 50%
   transform: translateX(-50%)
   width: 13px
@@ -109,19 +109,69 @@
 .timeline-item + .timeline-item
   +media(s, 40px)
     margin-top: 60px
+
+.timeline-item-q4 .timeline-item-name
+  margin-bottom: 140px
   
-.timeline-item-label
-  padding-bottom: 120px
+.timeline-item-name
+  position: relative
+  margin-bottom: 12px
+  font-family: 'HelveticaNeue-Medium', sans-serif
+  font-size: 16px
+  color: #FAFBFC
+  letter-spacing: 0
+  text-align: center
+
+.timeline-item-name::before
+  content: ''
+  position: absolute
+  top: -25px
+  left: 50%
+  transform: translate(-50%, -100%)
+  background-size: contain
+
+.timeline-item-name.prague::before
+  width: 81px
+  height: 97px
+  background: url('./../img/illustrations/prague.svg') center no-repeat
+  background-size: contain
+.timeline-item-name.osaka::before
+  width: 51px
+  height: 71px
+  background: url('./../img/illustrations/osaka.svg') center no-repeat
+  background-size: contain
+.timeline-item-name.berlin::before
+  width: 95px
+  height: 66px
+  background: url('./../img/illustrations/berlin.svg') center no-repeat
+  background-size: contain
+.timeline-item-name.calendar::before
+  width: 85px
+  height: 67px
+  background: url('./../img/illustrations/calendar.svg') center no-repeat
+  background-size: contain
+
+.timeline-item-location
+  padding-bottom: 115px
   font-size: 14px
   color: #FAFBFC
-  letter-spacing: -0.44px
-
-  +media(s, 40px)
-    padding-bottom: 75px
+  letter-spacing: 0
+  text-align: center
+  opacity: 0.8
 
 .timeline-item-description
+  margin-bottom: 11px
+  font-family: 'HelveticaNeue-Medium', sans-serif
   font-size: 15px
   color: #FFFFFF
   letter-spacing: -0.47px
+  text-align: center
   line-height: 22px
   opacity: 0.85
+
+.timeline-item-description
+  opacity: 0.8
+  font-size: 13px
+  color: #FAFBFC
+  letter-spacing: 0
+  text-align: center

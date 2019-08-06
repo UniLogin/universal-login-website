@@ -1,30 +1,19 @@
 .header
   position: relative
+  min-height: 100vh
   padding: 30px 0 145px
-  background: -webkit-radial-gradient(15.67% 14.13%, 1953.06px, #0C0E57 0%, #14052C 100%)
-  background: -o-radial-gradient(15.67% 14.13%, 1953.06px, #0C0E57 0%, #14052C 100%)
-  background: radial-gradient(1953.06px at 15.67% 14.13%, #0C0E57 0%, #14052C 100%)
+  background: linear-gradient(179.99deg, #566CEF -54.29%, #0C0D57 44.63%, #14052C 110.34%)
 
   +media(s, 168px)
     padding: 30px 0 155px
   
-.header::before
-  content: ''
-  position: absolute
-  top: 0
-  left: 0
-  width: 500px
-  height: 100%
-  background: url('../img/decoration/loop1.svg') center no-repeat
-  
 .header-top
   display: flex
   justify-content: space-between
-  margin-bottom: 102px
+  margin-bottom: 75px
 
   +media(s, 168px)
     justify-content: center
-    margin-bottom: 75px
   
 .header-right
   padding-top: 7px
@@ -47,43 +36,51 @@
   color: #FFFFFF
   letter-spacing: -0.5px
   opacity: 0.7
+  font-family: 'HelveticaNeue-Medium'
 
 .nav-link:hover
   opacity: 1
 
-.hero-content
-  max-width: 770px
-  margin: 0 auto
-  text-align: center
+.hero-row
+  display: flex
+  align-items: center
+  justify-content: space-between
 
-  +media(m)
-    max-width: 610px
+.hero-content
+  max-width: 730px
   
 .hero-title
   margin-bottom: 10px
-  font-family: 'Geomanist-Book', sans-serif
+  font-family: 'Geomanist-Book'
   font-weight: 500
-  font-size: 42px
+  font-size: 58px
   color: #FFFFFF
-  letter-spacing: -0.3px
-
-  +media(m)
-    font-size: 36px
-    letter-spacing: -0.26px
-
-  +media(m)
-    font-size: 32px
+  letter-spacing: 0
+  line-height: 70px
+  text-align: left
 
 .hero-text
-  margin-bottom: 40px
-  font-size: 18px
-  color: #FFFFFF
-  letter-spacing: -0.56px
-  text-align: center
+  font-weight: 300
+  font-size: 24px
+  color: #CFCEDA
+  letter-spacing: 1px
   line-height: 32px
-  opacity: 0.8
 
-  +media(m)
-    margin-bottom: 35px
-    font-size: 16px
-    letter-spacing: -0.5px
+.phone
+  position: relative
+  width: 305px
+  height: 605px
+
+.phone img
+  position: relative
+  width: 305px
+
+.phone video
+  position: absolute
+  top: 12px
+  left: 0
+  right: 0
+  bottom: 0
+  width: 100%
+  height: 98%
+  border-radius: 65px
