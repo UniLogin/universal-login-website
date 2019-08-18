@@ -31,13 +31,15 @@
 				</a>
 			</li>
 		</ul>
-		<header class="header">
+		<header id="header" class="header">
 			<div class="container">
 				<div class="header-top">
 					<div class="header-left">
 						<img src="./img/logo.svg" alt="Logo" class="header-logo">
 					</div>
-					<div class="header-right">
+					<button id="sidebarOpen" class="sidebar-open-btn"></button>
+					<div id="sidebar" class="header-right">
+						<button id="sidebarClose" class="sidebar-close-btn"></button>
 						<nav class="nav">
 							<ul class="nav-list">
 								<li class="nav-list-item">
@@ -64,8 +66,8 @@
 						<p class="hero-text">Decentralized.</p>
 					</div>
 					<div class="hero-phone phone">
-						<video autoplay loop>
-							<source src="https://ul-preview.netlify.com/video/different_logos.mp4" type="video/mp4">
+						<video loop autoplay>
+							<source src="https://res.cloudinary.com/dqxspkbrl/video/upload/v1566131116/loginy_ch3htu.mp4" type="video/mp4">
 						</video>
 						<img src="./img/phone.png" alt="phone">
 					</div>
@@ -80,24 +82,19 @@
 							<div class="container">
 								<div class="scrollable-section-row">
 									<div class="scrollable-phone">
-										<video preload="auto" id="video1" class="scrollable-video" autoplay loop src="https://ul-preview.netlify.com/video/creating_new_wallet.mp4">
-											<source type="video/mp4">
+										<video preload="auto" id="video1" class="scrollable-video" loop autoplay>
+											<source src="https://res.cloudinary.com/dqxspkbrl/video/upload/v1566131116/create_account_hosl2j.mp4" type="video/mp4">
 										</video>
-										<video preload="auto" id="video2" class="scrollable-video " autoplay loop src="https://ul-preview.netlify.com/video/topup.mp4" >
-											<source type="video/mp4">
+										<video preload="auto" id="video2" class="scrollable-video" loop autoplay>
+											<source src="https://res.cloudinary.com/dqxspkbrl/video/upload/v1566131114/mobile_transfering.mp4_xjej0r.mp4" type="video/mp4">
 										</video>
-										<video preload="auto" id="video3" class="scrollable-video " autoplay loop src="https://ul-preview.netlify.com/video/phone-emoji.mp4">
-											<source type="video/mp4">
+										<video preload="auto" id="video3" class="scrollable-video" loop autoplay>
+											<source src="https://res.cloudinary.com/dqxspkbrl/video/upload/v1566131113/mobile_connect_fzqxv8.mp4" type="video/mp4">
 										</video>
-										<video preload="auto" id="video4" class="scrollable-video " autoplay loop src="https://ul-preview.netlify.com/video/different_logos.mp4">
-											<source type="video/mp4">
+										<video preload="auto" id="video4" class="scrollable-video" loop autoplay>
+											<source src="https://res.cloudinary.com/dqxspkbrl/video/upload/v1566131116/loginy_ch3htu.mp4" type="video/mp4">
 										</video>
 										<img src="./img/phone.png" alt="phone">
-									</div>
-									<div class="laptop js-laptop">
-										<video class="laptop-video js-laptop-video" loop autoplay>
-											<source src="./video/laptop_confirming_emoji.mp4">
-										</video>
 									</div>
 								</div>
 							</div>
@@ -317,8 +314,18 @@ const transactionId = await sdk.execute(message, privateKey);
 							</a>
 						</li>
 						<li class="contributors-list-item">
+							<a href="https://github.com/msieczko" class="contributor-link" target="blank">
+								<img src="./img/photo/contributors/8.jpg" alt="contributor photo" class="contributor-img">
+							</a>
+						</li>
+						<li class="contributors-list-item">
 							<a href="https://github.com/yaram" class="contributor-link" target="blank">
 								<img src="./img/photo/contributors/9.jpg" alt="contributor photo" class="contributor-img">
+							</a>
+						</li>
+						<li class="contributors-list-item">
+							<a href="https://github.com/chevdor" class="contributor-link" target="blank">
+								<img src="./img/photo/contributors/10.png" alt="contributor photo" class="contributor-img">
 							</a>
 						</li>
 					</ul>
@@ -351,32 +358,34 @@ const transactionId = await sdk.execute(message, privateKey);
 				<div class="roadmap">
 					<div class="container">
 						<h2 class="section-title roadmap-title">Roadmap</h2>
-						<ul class="timeline">
-							<li class="timeline-item complete">
-								<p class="timeline-item-name prague">Devcon IV</p>
-								<p class="timeline-item-location">Prague</p>
-								<p class="timeline-item-description">Prototype</p>
-								<p class="timeline-item-date">Prototype</p>
-							</li>
-							<li class="timeline-item">
-								<p class="timeline-item-name berlin">Berlin Blockchain Week</p>
-								<p class="timeline-item-location">Berlin</p>
-								<p class="timeline-item-description">Pilots</p>
-								<p class="timeline-item-date">19/08/2019</p>
-							</li>
-							<li class="timeline-item">
-								<p class="timeline-item-name osaka">Devcon V</p>
-								<p class="timeline-item-location">Osaka</p>
-								<p class="timeline-item-description">Beta</p>
-								<p class="timeline-item-date">08/10/2019</p>
-							</li>
-							<li class="timeline-item timeline-item-q4">
-								<p class="timeline-item-name calendar">Q4</p>
-								<p class="timeline-item-description">Production</p>
-								<p class="timeline-item-date">Q4 - 2019</p>
-							</li>
-							
-						</ul>
+						<div class="timeline-wrapper">
+							<ul class="timeline">
+								<li class="timeline-item complete">
+									<p class="timeline-item-name prague">Devcon IV</p>
+									<p class="timeline-item-location">Prague</p>
+									<p class="timeline-item-description">Prototype</p>
+									<p class="timeline-item-date">Prototype</p>
+								</li>
+								<li class="timeline-item">
+									<p class="timeline-item-name berlin">Berlin Blockchain Week</p>
+									<p class="timeline-item-location">Berlin</p>
+									<p class="timeline-item-description">Pilots</p>
+									<p class="timeline-item-date">19/08/2019</p>
+								</li>
+								<li class="timeline-item">
+									<p class="timeline-item-name osaka">Devcon V</p>
+									<p class="timeline-item-location">Osaka</p>
+									<p class="timeline-item-description">Beta</p>
+									<p class="timeline-item-date">08/10/2019</p>
+								</li>
+								<li class="timeline-item timeline-item-q4">
+									<p class="timeline-item-name calendar">Q4</p>
+									<p class="timeline-item-description">Production</p>
+									<p class="timeline-item-date">Q4 - 2019</p>
+								</li>
+								
+							</ul>
+						</div>
 					</div>
 				</div>
 
