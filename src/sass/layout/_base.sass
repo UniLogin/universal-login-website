@@ -2,11 +2,16 @@
   box-sizing: border-box
   -webkit-font-smoothing: antialiased
   
+html
+  background: #100944
+  
+  +media(s)
+    overflow-x: hidden
+  
 body
   overflow-x: hidden
   font-family: 'HelveticaNeue', sans-serif
   -webkit-backface-visibility: hidden
-  -webkit-transform: translate3d(0,0,0)
   -webkit-transform-style: preserve-3d
   
 video
