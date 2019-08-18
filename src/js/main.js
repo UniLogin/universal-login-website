@@ -12,7 +12,6 @@
   new ScrollMagic.Scene({triggerElement: "#sec4"})
     .setClassToggle("#video4", "visible")
     .addTo(controller);
-
 })();
 
 (function() {

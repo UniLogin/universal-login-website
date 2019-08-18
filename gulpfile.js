@@ -45,9 +45,6 @@ gulp.task('prebuild', async function() {
 	var buildCss = gulp.src('src/css/**/*')
 	.pipe(gulp.dest('dist/css'));
 
-	var buildVideo = gulp.src('src/video/**/*')
-	.pipe(gulp.dest('dist/video'));
-
 	var buildFonts = gulp.src('src/fonts/**/*')
 	.pipe(gulp.dest('dist/fonts'));
 
