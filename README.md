@@ -8,5 +8,5 @@ npm i
 
 ## Run local webserver:
 ```sh
-gulp
+npm start
 ```
