@@ -12,7 +12,7 @@
 	<link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#2b5797">
 	<meta name="theme-color" content="#ffffff">
-	<title>UniversalLoginSDK</title>
+	<title>Universal Login</title>
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/svg-animations.css">
 </head>
@@ -43,16 +43,13 @@
 						<nav class="nav">
 							<ul class="nav-list">
 								<li class="nav-list-item">
-									<a href="#problems" class="nav-link">Problems</a>
-								</li>
-								<li class="nav-list-item">
-									<a href="#solutions" class="nav-link">Solutions</a>
-								</li>
-								<li class="nav-list-item">
 									<a href="#process" class="nav-link">How does it work?</a>
 								</li>
 								<li class="nav-list-item">
 									<a href="#team" class="nav-link">Team</a>
+								</li>
+								<li class="nav-list-item">
+									<a href="#team" class="nav-link" id="roadmap">Road map</a>
 								</li>
 							</ul>
 						</nav>
@@ -60,7 +57,7 @@
 				</div>
 				<div class="hero-row">
 					<div class="hero-content">
-						<h1 class="hero-title">Removing barriers to the users of your dapp</h1>
+						<h1 class="hero-title">Removing barriers for the users of your dapp</h1>
 						<p class="hero-text">One username for all Ethereum apps.</p>
 						<p class="hero-text">No download required.</p>
 						<p class="hero-text">Decentralized.</p>
@@ -107,7 +104,7 @@
 						<div class="container">
 							<div class="scroll-section-row">
 								<div class="scroll-section-content">
-									<h2 class="scroll-section-title">Create account in seconds</h2>
+									<h2 class="scroll-section-title">Create an account in seconds</h2>
 									<p class="scroll-section-text">Create an account in seconds. No need for a deep understanding of crypto. No need to install any dedicated software. Just like you always wanted.</p>
 								</div>
 								<div class="scroll-phone">
@@ -120,8 +117,8 @@
 						<div class="container">
 							<div class="scroll-section-row">
 								<div class="scroll-section-content">
-									<h2 class="scroll-section-title">Best Fiat on-ramp</h2>
-									<p class="scroll-section-text">An account is only useful if it contains funds. Top-up your account instantly with a card or a bank account. No context switching. No exchanges. Just works.
+									<h2 class="scroll-section-title">Best fiat on-ramp</h2>
+									<p class="scroll-section-text">An account is only useful if it contains funds. Top-up your account instantly with a card or a bank account. No context switching. No exchanges. It just works.
 									</p>
 								</div>
 								<div class="scroll-phone">
@@ -151,7 +148,7 @@
 							<div class="scroll-section-content">
 								<h2 class="scroll-section-title">Simpler transaction fees</h2>
 								<p class="scroll-section-text">Pay transactions fees with your favorite token.
-									Make the user experience, so good that users don't need to know they are using blockchain.</p>
+									We make the user experience so good, users don't need to know they're using a blockchain.</p>
 							</div>
 							<div class="scroll-phone">
 								<img src="./img/phone/fees.png" srcset="./img/phone/fees@2x.png" alt="transaction fees">
@@ -166,8 +163,8 @@
 					<div class="process-content">
 						<div class="code-section">
 							<h2 class="section-title code-title">Getting started</h2>
-							<p class="code-subtitle">With Universal Login you can start creating applications in javascript in a few minutes.
-							</p>
+							<p class="code-subtitle">With Universal Login you can start creating applications in JavaScript in a few minutes.
+								</p>
 							<div class="code-block">
 								<pre>
 									<code class="">
@@ -251,7 +248,7 @@ const transactionId = await sdk.execute(message, privateKey);
 							<a href="https://dribbble.com/nberowska" target="blank">
 								<img src="./img/photo/natalia@2x.jpg" alt="Natalia Kirejczyk photo" class="creator-img">
 								<p class="creator-name">Natalia Kirejczyk</p>
-								<p class="creator-label">Graphic Designer</p>
+								<p class="creator-label">Graphic designer</p>
 							</a>
 						</li>
 						<li class="creators-list-item">
@@ -279,7 +276,7 @@ const transactionId = await sdk.execute(message, privateKey);
 							<a target="blank">
 								<img src="./img/photo/brantly.jpg" alt="Brantly Millegan photo" class="creator-img">
 								<p class="creator-name">Brantly Millegan</p>
-								<p class="creator-label">Developers Relationships</p>
+								<p class="creator-label">Developer relations</p>
 							</a>
 						</li>
 					</ul>
@@ -362,7 +359,7 @@ const transactionId = await sdk.execute(message, privateKey);
 					</div>
 				</div>
 
-				<div class="roadmap">
+				<div class="roadmap" id="roadmap">
 					<div class="container">
 						<h2 class="section-title roadmap-title">Roadmap</h2>
 						<div class="timeline-wrapper">
