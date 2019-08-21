@@ -1,8 +1,5 @@
 .creators
   position: relative
-  background: -webkit-radial-gradient(15.67% 14.13%, 2437.43px, #0C0E57 0%, #14052C 100%)
-  background: -o-radial-gradient(15.67% 14.13%, 2437.43px, #0C0E57 0%, #14052C 100%)
-  background: radial-gradient(2437.43px at 15.67% 14.13%, #0C0E57 0%, #14052C 100%)
   
 .creators .container
   position: relative
@@ -20,11 +17,9 @@
   +media(m, 100px)
     max-width: 690px
     margin: 0 auto 100px
-    justify-content: flex-start
 
   +media(s, 40px)
-    flex-direction: column
-    align-items: center
+    justify-content: flex-start
 
 .creators-label
   margin-bottom: 20px
@@ -38,13 +33,6 @@
   +media(s, 168px)
     font-size: 18px
     line-height: 23px
-  
-.creators-ethworks
-  display: flex
-
-  +media(s, 40px)
-    flex-direction: column
-    align-items: center
 
 .creators-list-item
   position: relative
@@ -56,12 +44,20 @@
     margin: 0 4% 4% 0
 
   +media(s, 40px)
-    width: 210px
-    margin: 0 0 30px 0
+    width: 45%
+    margin: 0 10% 10% 0
 
-.creators-list-item:nth-child(3)
+.creators-list-item:nth-child(3n)
   +media(m, 100px)
     margin-right: 0
+
+  +media(s, 40px)
+    margin-right: 10%
+    
+.creators-list-item:nth-child(even)
+  +media(s, 40px)
+    margin-right: 0
+
   
 .creators-list-item:last-child
   margin-right: 0
@@ -70,29 +66,22 @@
   max-width: 100%
   
 .creator-name
-  position: absolute
-  left: 50%
-  bottom: 25px
-  width: 100%
-  transform: translateX(-50%)
-  opacity: 0.8
-  color: #FFFFFF
+  margin: 16px 0 8px
+  font-weight: 500
   font-size: 16px
+  color: #FFFFFF
   letter-spacing: -0.27px
   text-align: center
-  line-height: 32px
+  line-height: 20px
 
 .creator-label
-  position: absolute
-  left: 50%
-  bottom: 15px
-  width: 100%
-  transform: translateX(-50%)
-  font-size: 9px
-  color: #53F0CC
-  letter-spacing: 0.65px
+  opacity: 0.8
+  font-weight: 500
+  font-size: 14px
+  color: #FFFFFF
+  letter-spacing: 0
   text-align: center
-  text-transform: uppercase
+  line-height: 20px
   
 .working-group
   margin: 0 auto 160px
@@ -158,7 +147,7 @@
     max-width: 290px
 
 .contributors-list-item
-  width: 21.2%
+  width: 16%
   margin: 0 5% 5% 0
 
   +media(s)
@@ -166,7 +155,7 @@
     height: 85px
     margin: 0 15px 15px 0
 
-.contributors-list-item:nth-child(4n)
+.contributors-list-item:nth-child(5n)
   margin-right: 0
 
   +media(s)

@@ -1,16 +1,27 @@
 *
   box-sizing: border-box
   -webkit-font-smoothing: antialiased
-
+  
 html
-  overflow-x: hidden
-
+  background: #100944
+  
+  +media(s)
+    overflow-x: hidden
+  
 body
-  overflow: hidden
+  overflow-x: hidden
+  font-family: 'HelveticaNeue', sans-serif
+  -webkit-backface-visibility: hidden
+  -webkit-transform-style: preserve-3d
+  
+video
+  -webkit-backface-visibility: hidden
+  -webkit-transform: translate3d(0,0,0)
+  -webkit-transform-style: preserve-3d
 
 .container
   width: 100%
-  max-width: 1230px
+  max-width: 1160px
   margin: 0 auto
   padding: 0 30px
   

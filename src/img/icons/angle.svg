@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="12px" viewBox="0 0 8 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.2 (81672) - https://sketch.com -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <g id="mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.6">
+        <g id="menu" transform="translate(-169.000000, -24.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Group-40" transform="translate(146.000000, 0.000000)">
+                <g id="Group-39" transform="translate(21.000000, 23.001467)">
+                    <path d="M5.96509876,6.78424753 L2.37628062,3.19308835 C1.8743417,2.690822 1.87460712,1.87675279 2.37687347,1.37481387 C2.87913982,0.872874942 3.69320903,0.873140371 4.19514795,1.37540672 L8.69221445,5.87540672 C9.19395588,6.37747544 9.19388807,7.19110173 8.69221421,7.69308859 L4.19514795,12.1930883 C3.69320903,12.6953547 2.87913982,12.6956201 2.37687347,12.1936812 C1.87460712,11.6917423 1.8743417,10.8776731 2.37628062,10.3754067 L5.96509876,6.78424753 Z" id="Combined-Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
