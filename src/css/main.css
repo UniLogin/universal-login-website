@@ -1257,6 +1257,9 @@ video {
 .ethsimple-img {
   width: 200px; }
 
+.santiment-img {
+  max-width: 160px; }
+
 .contributors-list {
   display: -webkit-box;
   display: -webkit-flex;
