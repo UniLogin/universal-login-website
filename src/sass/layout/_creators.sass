@@ -106,19 +106,27 @@
   display: flex
   align-items: center
   flex-wrap: wrap
-  justify-content: space-between
+  justify-content: center
   margin: 0 auto
 
+  +media(m, 90px)
+    justify-content: space-between
+  
   +media(s, -100px)
     flex-direction: column
   
 .working-group-list-item
-  width: 15%
+  width: 21%
+  margin-bottom: 20px
   text-align: center
+
   +media(m, 90px)
     width: 50%
     margin-bottom: 38px
     text-align: center
+
+  +media(s, -100px)
+    width: 100%
 
 .working-group-list-item:nth-child(odd)
   +media(s, 168px)
@@ -137,6 +145,15 @@
 .iexec-img
   width: 112px
   
+.original-works-img
+  width: 180px
+  
+.ethsimple-img
+  width: 200px
+
+.santiment-img
+  max-width: 160px
+
 .contributors-list
   display: flex
   max-width: 478px
