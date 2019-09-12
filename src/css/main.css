@@ -1203,11 +1203,17 @@ video {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0 auto; }
+  @media (max-width: 990px) {
+    .working-group-list {
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
   @media (max-width: 500px) {
     .working-group-list {
       -webkit-box-orient: vertical;
@@ -1217,13 +1223,17 @@ video {
               flex-direction: column; } }
 
 .working-group-list-item {
-  width: 15%;
+  width: 21%;
+  margin-bottom: 20px;
   text-align: center; }
   @media (max-width: 990px) {
     .working-group-list-item {
       width: 50%;
       margin-bottom: 38px;
       text-align: center; } }
+  @media (max-width: 500px) {
+    .working-group-list-item {
+      width: 100%; } }
 
 @media (max-width: 768px) {
   .working-group-list-item:nth-child(odd) {
@@ -1240,6 +1250,15 @@ video {
 
 .iexec-img {
   width: 112px; }
+
+.original-works-img {
+  width: 180px; }
+
+.ethsimple-img {
+  width: 180px; }
+
+.santiment-img {
+  max-width: 160px; }
 
 .contributors-list {
   display: -webkit-box;
