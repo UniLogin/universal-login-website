@@ -173,31 +173,67 @@
 								</pre>
 							</div>
 
+              <p class="code-subtitle">1. Initialize the SDK:</p>
 							<div class="code-block">
 								<pre>
-									<code class="">
+									<code class="titled">
 const UniversalLoginSDK = require('@universal-login/sdk').default;
 
 const sdk = new UniversalLoginSDK(
-	'https://universal-login-relayer.herokuapp.com',
-	"https://rinkeby.infura.io"
+	'https://relayer-rinkeby.herokuapp.com',
+	"https://rinkeby.infura.io/v3/access-token"
 );
-const [privateKey, contractAddress] = await sdk.create('PUT_NICK_HERE.my-id.test');
 
-const message = {
-	from: contractAddress,
-	to: '0xf4C1A210B6436eEe17fDEe880206E9d3Ab178c18',
-	data: '0x',
-	value: '1000000000000000',
-	gasToken: '0x5f81e2afde8297f90b3f9179f8f3ea172f3155a8',
-	gasPrice: 11000000000,
-	gasLimit: 1000000
-};
-
-const transactionId = await sdk.execute(message, privateKey);
+await sdk.start();
 									</code>
 								</pre>
-							</div>
+              </div>
+
+              <p class="code-subtitle">2. Deploy your wallet contract:</p>
+              <div class="code-block">
+								<pre>
+									<code class="titled">
+const GAS_PRICE = '11000000000';
+const GAS_TOKEN = '0x0000000000000000000000000000000000000000';
+
+const {
+  waitForBalance,
+  deploy,
+  privateKey,
+  contractAddress
+} = await sdk.createFutureWallet();
+await waitForBalance(); // it waits for you to send ether to 'contractAddress'
+
+let {waitToBeSuccess} = await deploy(
+  'yourname.poppularapp.test',
+  GAS_PRICE,
+  GAS_TOKEN
+);
+const wallet = await waitToBeSuccess();
+									</code>
+								</pre>
+              </div>
+
+              <p class="code-subtitle">3. Send your message:</p>
+              <div class="code-block">
+								<pre>
+									<code class="titled">
+const message = {
+  from: contractAddress,
+  to: '0xf4C1A210B6436eEe17fDEe880206E9d3Ab178c18',
+  data: '0x',
+  value: '1',
+  gasToken: '0x0000000000000000000000000000000000000000',
+  gasPrice: '11000000000',
+  gasLimit: '500000'
+};
+({waitToBeSuccess} = await sdk.execute(message, privateKey));
+await waitToBeSuccess();
+									</code>
+								</pre>
+              </div>
+
+
 						</div>
 					</div>
 				</div>

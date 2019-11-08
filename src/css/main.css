@@ -940,6 +940,8 @@ video {
   background: #110C22;
   line-height: 20px;
   text-align: left; }
+  .code-block code.titled {
+    margin: 0px auto 0; }
 
 .code-btn-wrapper {
   text-align: center;
