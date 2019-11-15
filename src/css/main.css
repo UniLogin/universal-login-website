@@ -1225,7 +1225,7 @@ video {
               flex-direction: column; } }
 
 .working-group-list-item {
-  width: 21%;
+  width: 30%;
   margin-bottom: 20px;
   text-align: center; }
   @media (max-width: 990px) {
@@ -1261,6 +1261,9 @@ video {
 
 .santiment-img {
   max-width: 160px; }
+
+.podcrypt-img {
+  max-width: 50px; }
 
 .contributors-list {
   display: -webkit-box;
