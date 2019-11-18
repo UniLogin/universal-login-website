@@ -1224,21 +1224,34 @@ video {
           -ms-flex-direction: column;
               flex-direction: column; } }
 
-.working-group-list-item {
-  width: 30%;
+.working-group-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 21%;
   margin-bottom: 20px;
-  text-align: center; }
+  text-align: center;
+  font-size: 24px; }
   @media (max-width: 990px) {
-    .working-group-list-item {
+    .working-group-item {
       width: 50%;
       margin-bottom: 38px;
       text-align: center; } }
   @media (max-width: 500px) {
-    .working-group-list-item {
+    .working-group-item {
       width: 100%; } }
 
 @media (max-width: 768px) {
-  .working-group-list-item:nth-child(odd) {
+  .working-group-item:nth-child(odd) {
     margin-left: 0; } }
 
 .kickback-img {
@@ -1264,6 +1277,15 @@ video {
 
 .podcrypt-img {
   max-width: 50px; }
+
+.hero-img {
+  max-width: 50px; }
+
+.hero-logo-text {
+  margin-left: 8px;
+  font-size: 24px;
+  font-weight: 200;
+  letter-spacing: 10px; }
 
 .contributors-list {
   display: -webkit-box;
