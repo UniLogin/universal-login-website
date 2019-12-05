@@ -1278,17 +1278,11 @@ video {
 .podcrypt-img {
   max-width: 50px; }
 
-.hero-img {
-  max-width: 50px; }
-
 .ether-wallet-img {
   max-width: 120px; }
 
-.hero-logo-text {
-  margin-left: 8px;
-  font-size: 24px;
-  font-weight: 200;
-  letter-spacing: 10px; }
+.hoard-img {
+  max-width: 130px; }
 
 .contributors-list {
   display: -webkit-box;
