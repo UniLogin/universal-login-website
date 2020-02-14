@@ -57,6 +57,9 @@ gulp.task('prebuild', async function() {
 	var buildHtml = gulp.src('src/*.html')
 	.pipe(gulp.dest('dist'));
 
+	var buildRedirects = gulp.src('src/_redirects')
+	.pipe(gulp.dest('dist'));
+
 });
 
 gulp.task('build', gulp.parallel('prebuild', 'clean', 'img', 'sass'));
